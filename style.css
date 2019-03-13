@@ -1,8 +1,10 @@
 @font-face {
     font-family: 'FiraCode';
-    src: url('FiraCode.ttf');
+    src: url('assets/FiraCode-Regular.ttf');
 }
 
 * {
-    font-family: 'firaCode'
+    font-family: 'firaCode';
+    font-weight: normal;
+    font-size: 28px;
 }
