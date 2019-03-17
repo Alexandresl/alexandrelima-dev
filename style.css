@@ -6,5 +6,21 @@
 * {
     font-family: 'firaCode';
     font-weight: normal;
-    font-size: 28px;
+    margin: 0;
+    padding: 0;
 }
+
+.red {
+    color: #BA3F3F;
+}
+
+.blue {
+    color: #3F5BBA;
+}
+
+.logo {
+    font-size: 28px;
+    text-shadow: 1px 1px #3f3f3f;
+    float: left;
+}
+
