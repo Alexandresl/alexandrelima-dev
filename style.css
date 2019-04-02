@@ -10,6 +10,49 @@
     padding: 0;
 }
 
+body {
+    background-color: #222;
+    color: #fff;
+}
+
+header {
+    position: fixed;
+    background-image: url(assets/header-background.jpg);
+    background-position: top;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    color: #fff;
+    text-shadow: 1px 1px 1px #333;
+    font-weight: bold;
+}
+
+.header-title {
+    font-size: 1.6em;
+    text-align: center;
+    display: block;
+    margin: 100px auto 0;
+
+}
+
+.header-title div {
+    display: inline;
+    padding: 0 50px;
+    border-bottom: 1px solid #fff5;
+    
+}
+
+.header-text {
+    font-size: 1em;
+    text-align: center;
+    display: block;
+}
+
+nav {
+    font-size: 14px;
+    box-shadow: 1px 1px 5px #333;
+}
+
 .red {
     color: #BA3F3F;
 }
@@ -20,7 +63,38 @@
 
 .logo {
     font-size: 1em;
-    text-shadow: 1px 1px #3f3f3f;
+    text-shadow: 1px 1px #444;
     float: left;
 }
 
+.container-fluid {
+    position: relative;
+    font-size: 14px;
+    top: 280px;
+    padding: 20px 0;
+    background-color: #444;
+    width: 100%;
+}
+
+.articles {
+    padding: 0 10px;
+}
+
+.container-fluid > h2 {
+    font-size: 1.8em;
+    padding: 0 15px;
+}
+
+.card {
+    margin: 10px 0;
+    color: #333 !important;
+}
+
+footer {
+   height: 100px;
+   text-align: center;
+}
+
+footer > span {
+    line-height: 100px;
+}
