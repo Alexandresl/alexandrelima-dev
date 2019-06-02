@@ -109,6 +109,30 @@ nav > ul > li > a {
     color: #fff;
 }
 
+.go-down img {
+    position: fixed;
+    bottom: 50px;
+    left: 48%;
+    z-index: 899;
+    animation:3s arrow infinite ease;
+}
+
+@keyframes arrow {
+    0%, 100% {
+        bottom: 60px;
+    }
+    50% {
+        bottom:40px;
+    }
+}
+
+.seta-go-down {
+    position: fixed;
+    bottom: 3px;
+    left: 48%;
+    z-index: 899;
+}
+
 section#home {
     position: absolute;
     top: 100%;
@@ -154,3 +178,4 @@ section#tabela {
 .rodada > form > select {
     display: inline-block;
 }
+
