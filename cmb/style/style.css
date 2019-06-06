@@ -9,6 +9,14 @@ h2 {
     font-weight: bold;
 }
 
+p {
+    margin: 5px 0;
+}
+
+ul {
+    list-style: none;
+}
+
 .mask-bg {
     position: fixed;
 	min-width: 1024px; 
@@ -159,23 +167,67 @@ section#tabela {
     position: absolute;
     top: 200%;
     background: #fff;
-    width: 90%;
+    width: 100%;
     z-index: 900;
-    padding: 250px 5% 50%;
+    padding: 200px 5px 50%;
     color: #fff;
     height: 60%;
     color: #C75A14;
+}
+
+section#tabela h2 {
+    text-align: right;
 }
 
 .rodada {
     display: inline-block;
 }
 
-.rodada > form > label {
-    display: inline-block;
-}
-
 .rodada > form > select {
-    display: inline-block;
+    width: 190px;
+    height: 33px;
+    border: 1px solid #C75A14;
+    margin-left: 5px;
+    border-radius: 10px;
+    color: #E38401;
+    font-size: 18px;
+    font-weight: bold;
+
 }
 
+.lista-jogos {
+    width: 100%;
+    min-width: 890px;
+    height: 386px;
+    background: #e4e4e4;
+    text-align: center;
+}
+
+.lista-jogos > a > .seta-left {
+    height: 35px;
+    margin-top: 175px;
+    float: left;
+    margin-left: 15px;
+}
+
+.lista-jogos > a > .seta-right {
+    height: 35px;
+    margin-top: 175px;
+    float: right;
+    margin-right: 15px;
+}
+
+.lista-jogos > ul {
+    display: inline-block;
+    width: auto;
+    min-width: 790px;
+    margin-top: 50px;
+}
+
+.lista-jogos > ul > li {
+    width: 235px;
+    height: 291px;
+    float: left;
+    margin: 0 1%;
+    background: #1C7CC5;
+}
