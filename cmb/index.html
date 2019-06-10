@@ -1,23 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Campeonato Municipal de Basquete</title>
-    <link rel="stylesheet" href="style/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,400,500,700,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body id="up">
+<body id="home">
 
-
-    <div class="mask-bg">
-
-
-    </div>
+    <div class="mask-bg"></div>
 
     <video src="assets/1283590222.ogv" autoplay muted auto loop class="bg-video">
         <source src="assets/1283590222.mp4" type="video/mp4">
@@ -25,80 +21,104 @@
         <source src="assets/1283590222.ogv" type="video/ogv">
     </video>
 
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#tabela">Tabela de jogos</a></li>
-            <li><a href="">Regulamento</a></li>
-            <li><a href="">Inscrição</a></li>
-        </ul>
-    </nav>
-
-    <div id="logo">
-        <a href="#up"><img src="assets/logo.png" alt=""></a>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper white">
+                <a href="#home" class="left brand-logo"><img src="assets/logo.png"></a>
+                <a href="#" data-activates="mobile-cmb" class="right button-collapse"><i
+                        class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li class="menu-item" ><a href="#home">Home</a></li>
+                    <li class="menu-item"><a href="#sobre">Sobre</a></li>
+                    <li class="menu-item"><a href="#jogos">Jogos</a></li>
+                    <li class="menu-item"><a href="">Classificação</a></li>
+                    <li class="menu-item"><a href="">Inscrição</a></li>
+                </ul>
+            </div>
+        </nav>
     </div>
+
+    <ul class="side-nav" id="mobile-cmb">
+        <li class="menu-item"><a href="#home">Home</a></li>
+        <li class="menu-item"><a href="#sobre">Sobre</a></li>
+        <li class="menu-item"><a href="#jogos">Jogos</a></li>
+        <li class="menu-item"><a href="">Inscrição</a></li>
+    </ul>
 
     <div id="header-content">
         <h3>Inscrições<br> de 10 a 30 de julho</h3>
         <a href="">Inscreva sua equipe</a>
-        <p>Conheça o regulemanto</p>
     </div>
 
-    <div class="go-down">
-        <a href="#home"><img src="assets/bola-picando.png" alt="go-down" title="go-down"></a>
-    </div>
-    <div class="seta-go-down">
-        <a href="#home"><img src="assets/seta-go-down.png" alt="set-go-down" title="go-down"></a>
-    </div>
+    <section id="sobre">
 
-    <section id="home">
-
-        <h2>CAMPEONATO PORTO ALEGRE DE BASQUETE 2019</h2>
+        <h4>CAMPEONATO DE PORTO ALEGRE DE BASQUETE 2019</h4>
 
         <p>O Campeonato Municipal de Basquete, em sua 15ª edição, busca reeditar uma competição
             participativa para atletas vinculados a clubes, escolas, associações esportivas, grupos de
             amigos e unidades da SMDSE, realizado em três divisões, série A e B no masculino e série
             única no feminino.</p>
 
-        <p>Inscrições: 10 de abril a 30 de abril, pelo email: eventos@sme.prefpoa.com.br</p>
+        <p class="p-icon"><a href="" class="white-text"><span>Conheça o regulamento</span><i
+                    class="material-icons">attach_file</i></a></p>
+        <p class="p-icon"><a href="" class="white-text"><span>Veja o histórico de anos anteriores</span><i
+                    class="material-icons">hourglass_empty</i></a></p>
 
-        <p>Conheça o regulamento</p>
+        <div class="row">
+
+            <div class="col s4 arbitragem">
+                <span>Arbitragem: </span>
+                <a href=""><img src="assets/arbitragem.png" alt="Arbitragem" title="Arbitragem"></a>
+            </div>
+
+            <p class="col s8 right-align">Mais informações podem ser obtidas de segundas a sextas, das 8h30 às 12h e das
+                <br>13h30 às 18h, pelos telefones 3289-4866 ou 3289-4873 ou pelo e-mail <br>eventos@sme.prefpoa.com.br
+            </p>
+
+        </div>
 
     </section>
 
-    <section id="tabela">
+    <section id="jogos">
 
         <h2>Tabela de jogos</h2>
 
-        <div class="rodada">
-            <form action="">
-                <label for="rodada">Selecione a rodada: </label>
-                <select name="rodada" id="rodada">
-                    <option value="1">1ª Rodada</option>
-                    <option value="1">2ª Rodada</option>
-                    <option value="1">3ª Rodada</option>
-                    <option value="1">4ª Rodada</option>
-                    <option value="1">5ª Rodada</option>
-                </select>
-            </form>
-            <p>Data: 02/06 DOMINGO - Local: Tesourinha, av. Érico Veríssimo s nº</p>
+
+        <div class="row">
+            <div class="col s12">
+                <div class="col s2"></div>
+                <ul class="tabs">
+                    <li class="tab col s1"><a href="#rodada1">1ª Rodada</a></li>
+                    <li class="tab col s1"><a href="#rodada2">2ª Rodada</a></li>
+                    <li class="tab col s1"><a href="#rodada3">3ª Rodada</a></li>
+                    <li class="tab col s1"><a href="#rodada4">4ª Rodada</a></li>
+                    <li class="tab col s1"><a href="#rodada5">5ª Rodada</a></li>
+                    <li class="tab col s1"><a href="#rodada6">6ª Rodada</a></li>
+                    <li class="tab col s1"><a href="#rodada7">7ª Rodada</a></li>
+                    <li class="tab col s1"><a href="#rodada8">8ª Rodada</a></li>
+                </ul>
+                <div class="col s2"></div>
+            </div>
+            <div class="col s2"></div>
+            <div id="rodada1" class="col s12 green">Test 1</div>
+            <div id="rodada2" class="col s12">Test 2</div>
+            <div id="rodada3" class="col s12">Test 3</div>
+            <div id="rodada4" class="col s12">Test 4</div>
+            <div id="rodada5" class="col s12">Test 1</div>
+            <div id="rodada6" class="col s12">Test 2</div>
+            <div id="rodada7" class="col s12">Test 3</div>
+            <div id="rodada8" class="col s12">Test 4</div>
+            <div class="col s2"></div>
         </div>
 
-        <div class="lista-jogos">
-            <a><img src="assets/seta-left.png" class="seta-left" alt="ir para a esquerda" title="ir para a esquerda"></a>
-            <ul>
-                <li>a</li>
-                <li>a</li>
-                <li>a</li>
-            </ul>
-            <a><img src="assets/seta-right.png" class="seta-right" alt="ir para a direita" title="ir para a direita"></a>
-        </div>
 
     </section>
 
-    <script src="script/jquery.min.js"></script>
-    <script src="script/script.js"></script>
 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
