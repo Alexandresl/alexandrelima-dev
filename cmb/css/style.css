@@ -1,4 +1,3 @@
-
 /*Modifica cor navbar*/
 
 .nav-wrapper>ul>li>a,
@@ -9,7 +8,7 @@
 }
 
 /* tamanho do logo */
-.brand-logo > img {
+.brand-logo>img {
     width: 25vw;
     max-width: 281px;
 }
@@ -99,12 +98,12 @@ section#sobre {
     text-decoration: underline;
 }
 
-.arbitragem > span {
+.arbitragem>span {
     display: block;
     margin-bottom: 5px;
 }
 
-.arbitragem > a > img {
+.arbitragem>a>img {
     width: 80px;
 }
 
@@ -113,46 +112,59 @@ section#jogos {
     top: 200%;
     background: #fff;
     width: 100%;
-    height: 100vh;
+    height: auto;
+    z-index: 900;
+    padding: 210px 5px 50%;
+    color: #C75A14;
+    background: rgba(227, 133, 1, 1);
+    background: -moz-linear-gradient(top, rgba(227, 133, 1, 1) 0%, rgba(255, 255, 255, 1) 49%, rgba(255, 255, 255, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(227, 133, 1, 1)), color-stop(49%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(255, 255, 255, 1)));
+    background: -webkit-linear-gradient(top, rgba(227, 133, 1, 1) 0%, rgba(255, 255, 255, 1) 49%, rgba(255, 255, 255, 1) 100%);
+    background: -o-linear-gradient(top, rgba(227, 133, 1, 1) 0%, rgba(255, 255, 255, 1) 49%, rgba(255, 255, 255, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(227, 133, 1, 1) 0%, rgba(255, 255, 255, 1) 49%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(to bottom, rgba(227, 133, 1, 1) 0%, rgba(255, 255, 255, 1) 49%, rgba(255, 255, 255, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e38501', endColorstr='#ffffff', GradientType=0);
+}
+
+section#jogos>h2 {
+    color: #fff;
+}
+
+#rodada1,
+#rodada2,
+#rodada3,
+#rodada4,
+#rodada5,
+#rodada6,
+#rodada7,
+#rodada8 {
+    height: auto;
+}
+
+td {
+    background: #eee;
+    border: 4px solid #fff;
+    line-height: 100%;
+    text-align: center;
+}
+
+section#classificacao {
+    position: absolute;
+    top: 360%;
+    background: #fff;
+    width: 100%;
+    height: auto;
     z-index: 900;
     padding: 210px 5px 50%;
     color: #C75A14;
 }
 
 
-a > .seta-left {
-    position: relative;
-    margin-top: 130px;
-    float: left;
-    margin-left: 15px;
-}
-
-a > .seta-right {
-    margin-top: 130px;
-    float: right;
-    margin-right: 15px;
-}
-
-.carousel.carousel-slider {
-    width: 100%;
-    height: 40vh;
-}
-
-.carousel.carousel-slider > a.carousel-item {
-    background: #1C7CC5;
-    border: 1px solid #333;
-    color: #1C7CC5;
-    border-radius: 15px;
-    box-shadow: 0 0 5px #333;
-    width: 40%;
-    height: 20%;
-}
-
 @media (max-width: 575.98px) {
 
-    
+
     /* conteúdo - home */
-    
+
     #header-content {
         position: fixed;
         left: 0;
@@ -183,9 +195,9 @@ a > .seta-right {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
 
-        /* conteúdo - home */
+    /* conteúdo - home */
 
-    
+
     #header-content {
         position: fixed;
         left: 0;
