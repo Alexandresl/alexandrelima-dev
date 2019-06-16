@@ -1,189 +1,787 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Alexandre Lima Desenvolvedor - Desenvolvedor Web</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <!-- <link rel="stylesheet" href="bootstrap.min.css" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-        </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-        </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-        </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Campeonato Municipal de Basquete</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body id="home">
 
-    <nav class="navbar navbar-expand-md fixed-top navbar-dark text-white" style="background: #303030;">
+    <div class="mask-bg"></div>
 
-        <a class="navbar-brand" href="#">
-            <span class="logo red">alexandreLima</span>
-            <span class="logo">.</span>
-            <span class="logo blue">dev()</span>
-        </a>
+    <video src="assets/1283590222.ogv" autoplay muted auto loop class="bg-video">
+        <source src="assets/1283590222.mp4" type="video/mp4">
+        <source src="assets/1283590222.webm" type="video/webm">
+        <source src="assets/1283590222.ogv" type="video/ogv">
+    </video>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03"
-            aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper white">
+                <a href="#home" class="left brand-logo"><img src="assets/logo.png"></a>
+                <a href="#" data-activates="mobile-cmb" class="right button-collapse"><i
+                        class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li class="menu-item"><a href="#home">Home</a></li>
+                    <li class="menu-item"><a href="#sobre">Sobre</a></li>
+                    <li class="menu-item"><a href="#jogos">Jogos</a></li>
+                    <li class="menu-item"><a href="#classificacao">Classificação</a></li>
+                    <li class="menu-item"><a href="#inscricao">Inscrição</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 
-        <div class="collapse navbar-collapse" id="navbarColor03">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Portfólio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Sobre mim</a>
-                </li>
-            </ul>
+    <ul class="side-nav" id="mobile-cmb">
+        <li class="menu-item"><a href="#home">Home</a></li>
+        <li class="menu-item"><a href="#sobre">Sobre</a></li>
+        <li class="menu-item"><a href="#jogos">Jogos</a></li>
+        <li class="menu-item"><a href="#classificacao">Classificacao</a></li>
+        <li class="menu-item"><a href="#inscricao">Inscrição</a></li>
+    </ul>
+
+    <div id="header-content">
+        <h3>Inscrições<br> de 10 a 30 de julho</h3>
+        <a href="">Inscreva sua equipe</a>
+    </div>
+
+    <section id="sobre">
+
+        <h4>CAMPEONATO DE PORTO ALEGRE DE BASQUETE 2019</h4>
+
+        <p>O Campeonato Municipal de Basquete, em sua 15ª edição, busca reeditar uma competição
+            participativa para atletas vinculados a clubes, escolas, associações esportivas, grupos de
+            amigos e unidades da SMDSE, realizado em três divisões, série A e B no masculino e série
+            única no feminino.</p>
+
+        <p class="p-icon"><a href="" class="white-text"><span>Conheça o regulamento</span><i
+                    class="material-icons">attach_file</i></a></p>
+        <p class="p-icon"><a href="" class="white-text"><span>Veja o histórico de anos anteriores</span><i
+                    class="material-icons">hourglass_empty</i></a></p>
+
+        <div class="row">
+
+            <div class="col s4 arbitragem">
+                <span>Arbitragem: </span>
+                <a href=""><img src="assets/arbitragem.png" alt="Arbitragem" title="Arbitragem"></a>
+            </div>
+
+            <p class="col s8 right-align">Mais informações podem ser obtidas de segundas a sextas, das 8h30 às 12h e das
+                <br>13h30 às 18h, pelos telefones 3289-4866 ou 3289-4873 ou pelo e-mail <br>eventos@sme.prefpoa.com.br
+            </p>
 
         </div>
-    </nav>
-    <header class="header-paralax">
 
-        <span class="header-title">
-            <div>Alexandre Lima</div>
-        </span>
-        <span class="header-text">
-            <div>Desenvolvedor Web</div>
-        </span>
-    </header>
-    <div class="container-fluid">    
-                <h2>Artigos / Projetos</h2>
+    </section>
 
-                <div class="row articles">
-                    <div class="col-sm-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Em Breve</h5>
-                                <p class="card-text">Site em construção!</p>
-                                <button href="#" class="btn btn-primary" disabled>Detalhes</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Em Breve</h5>
-                                <p class="card-text">Site em construção!</p>
-                                <button href="#" class="btn btn-primary" disabled>Detalhes</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Em Breve</h5>
-                                <p class="card-text">Site em construção!</p>
-                                <button href="#" class="btn btn-primary" disabled>Detalhes</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row articles">
-                    <div class="col-sm-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Em Breve</h5>
-                                <p class="card-text">Site em construção!</p>
-                                <button href="#" class="btn btn-primary" disabled>Detalhes</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Em Breve</h5>
-                                <p class="card-text">Site em construção!</p>
-                                <button href="#" class="btn btn-primary" disabled>Detalhes</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Em Breve</h5>
-                                <p class="card-text">Site em construção!</p>
-                                <button href="#" class="btn btn-primary" disabled>Detalhes</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row articles">
-                    <div class="col-sm-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Em Breve</h5>
-                                <p class="card-text">Site em construção!</p>
-                                <button href="#" class="btn btn-primary" disabled>Detalhes</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Em Breve</h5>
-                                <p class="card-text">Site em construção!</p>
-                                <button href="#" class="btn btn-primary" disabled>Detalhes</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Em Breve</h5>
-                                <p class="card-text">Site em construção!</p>
-                                <button href="#" class="btn btn-primary" disabled>Detalhes</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        <footer>
-            <span>Alexandre Lima</span>
-            <span>&copy; Todos os direitos reservados.</span>
-        </footer>
-    </div>
-    <script>
-        function scrollBanner() {
-            var scrollPos;
-            var headerText = document.querySelectorAll('.header-paralax span');
-            scrollPos = window.scrollY;
-            if (scrollPos <= 400) {
+    <section id="jogos">
 
-                headerText.forEach(ht => {
+        <h2>Tabela de jogos</h2>
 
-                    ht.style.transform = "translateY(" + (-scrollPos / 3) + "px" + ")";
-                    ht.style.opacity = 1 - (scrollPos / 400);
+        <p>Selecione a Rodada</p>
 
-                })
+        <div class="row">
+            <div class="col s12">
+                <ul class="tabs">
+                    <div class="col l2 xl2"></div>
+                    <li class="tab col s1"><a href="#rodada1">1ª</a></li>
+                    <li class="tab col s1"><a href="#rodada2">2ª</a></li>
+                    <li class="tab col s1"><a href="#rodada3">3ª</a></li>
+                    <li class="tab col s1"><a href="#rodada4">4ª</a></li>
+                    <li class="tab col s1"><a href="#rodada5">5ª</a></li>
+                    <li class="tab col s1"><a href="#rodada6">6ª</a></li>
+                    <li class="tab col s1"><a href="#rodada7">7ª</a></li>
+                    <li class="tab col s1"><a href="#rodada8">8ª</a></li>
+                    <div class="col l2 xl2"></div>
+                </ul>
+                <div class="col s2"></div>
+            </div>
 
-            }
-        }
+            <div id="rodada1" class="col s12">
 
-        window.addEventListener('scroll', scrollBanner);
-    </script>
+                <table class="highlight responsive-table white">
+                    <tr class="data-local">
+                        <td>19/05 DOMINGO</td>
+                        <td colspan="2">Tesourinha, av. Érico Veríssimo s nº:</td>
+                    </tr>
+                    <tr class="tr-title">
+                        <td> Hora</td>
+                        <td>Naipe / Série / Chave</td>
+                        <td>Jogo</td>
+                    </tr>
+                    <tr>
+                        <td>8:30</td>
+                        <td>M / B / B</td>
+                        <td>TITIOS X AFCEEE</td>
+                    </tr>
+                    <tr>
+                        <td>9:15</td>
+                        <td>M / B / A</td>
+                        <td>GERALDO X EMBAIXADORES</td>
+                    </tr>
+                    <tr>
+                        <td>10:00</td>
+                        <td>M / B / B</td>
+                        <td>VIAMÃO X AFCEEE</td>
+                    </tr>
+                    <tr>
+                        <td>10:45 </td>
+                        <td>M / B / A</td>
+                        <td>TYTOS X EMBAIXADORES</td>
+                    </tr>
+                    <tr>
+                        <td>11:30 </td>
+                        <td>M / B / B</td>
+                        <td>VIAMÃO X TITIOS</td>
+                    </tr>
+                    <tr>
+                        <td>12:15</td>
+                        <td>M / B / A</td>
+                        <td>TYTOS X GERALDO</td>
+                    </tr>
+                    <tr>
+                        <td>13:00</td>
+                        <td>M / A / C</td>
+                        <td>UNITED X VETERANOS</td>
+                    </tr>
+                    <tr>
+                        <td>13:45</td>
+                        <td>M / B / C</td>
+                        <td>PANTERAS X MUSTANGS</td>
+                    </tr>
+                    <tr>
+                        <td>14:30</td>
+                        <td>M / B / D</td>
+                        <td>SCISSORS X TESOURINHA</td>
+                    </tr>
+                    <tr>
+                        <td>15:15</td>
+                        <td>M / B / C</td>
+                        <td>UNITED X JAWS</td>
+                    </tr>
+                    <tr>
+                        <td>16:00</td>
+                        <td>M / B / C</td>
+                        <td>GURIS X MUSTANGS</td>
+                    </tr>
+                    <tr>
+                        <td>16:45</td>
+                        <td>M / B / D</td>
+                        <td>MONSTARS X SCISSORS</td>
+                    </tr>
+                    <tr>
+                        <td>17:30</td>
+                        <td>M / B / C</td>
+                        <td>GURIS X PANTERAS</td>
+                    </tr>
+                    <tr>
+                        <td>18:15</td>
+                        <td>M / B / D</td>
+                        <td>MONSTARS X TESOURINHA</td>
+                    </tr>
+                </table>
+
+            </div>
+            <div id="rodada2" class="col s12">
+                <table class="highlight responsive-table white">
+                    <tr class="data-local">
+                        <td>26 /05 DOMINGO</td>
+                        <td colspan="2">Tesourinha, av. Érico Veríssimo s nº:</td>
+                    </tr>
+                    <tr class="tr-title">
+                        <td> Hora</td>
+                        <td>Naipe / Série / Chave</td>
+                        <td>Jogo</td>
+                    </tr>
+                    <tr>
+                        <td>8:30</td>
+                        <td>M / B / B</td>
+                        <td>TITIOS X AFCEEE</td>
+                    </tr>
+                    <tr>
+                        <td>9:15</td>
+                        <td>M / B / A</td>
+                        <td>GERALDO X EMBAIXADORES</td>
+                    </tr>
+                    <tr>
+                        <td>10:00</td>
+                        <td>M / B / B</td>
+                        <td>VIAMÃO X AFCEEE</td>
+                    </tr>
+                    <tr>
+                        <td>10:45 </td>
+                        <td>M / B / A</td>
+                        <td>TYTOS X EMBAIXADORES</td>
+                    </tr>
+                    <tr>
+                        <td>11:30 </td>
+                        <td>M / B / B</td>
+                        <td>VIAMÃO X TITIOS</td>
+                    </tr>
+                    <tr>
+                        <td>12:15</td>
+                        <td>M / B / A</td>
+                        <td>TYTOS X GERALDO</td>
+                    </tr>
+                    <tr>
+                        <td>13:00</td>
+                        <td>M / A / C</td>
+                        <td>UNITED X VETERANOS</td>
+                    </tr>
+                    <tr>
+                        <td>13:45</td>
+                        <td>M / B / C</td>
+                        <td>PANTERAS X MUSTANGS</td>
+                    </tr>
+                    <tr>
+                        <td>14:30</td>
+                        <td>M / B / D</td>
+                        <td>SCISSORS X TESOURINHA</td>
+                    </tr>
+                    <tr>
+                        <td>15:15</td>
+                        <td>M / B / C</td>
+                        <td>UNITED X JAWS</td>
+                    </tr>
+                    <tr>
+                        <td>16:00</td>
+                        <td>M / B / C</td>
+                        <td>GURIS X MUSTANGS</td>
+                    </tr>
+                    <tr>
+                        <td>16:45</td>
+                        <td>M / B / D</td>
+                        <td>MONSTARS X SCISSORS</td>
+                    </tr>
+                    <tr>
+                        <td>17:30</td>
+                        <td>M / B / C</td>
+                        <td>GURIS X PANTERAS</td>
+                    </tr>
+                    <tr>
+                        <td>18:15</td>
+                        <td>M / B / D</td>
+                        <td>MONSTARS X TESOURINHA</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="rodada3" class="col s12">
+                <table class="highlight responsive-table white">
+                    <tr class="data-local">
+                        <td>26 /05 DOMINGO</td>
+                        <td colspan="2">Tesourinha, av. Érico Veríssimo s nº:</td>
+                    </tr>
+                    <tr class="tr-title">
+                        <td> Hora</td>
+                        <td>Naipe / Série / Chave</td>
+                        <td>Jogo</td>
+                    </tr>
+                    <tr>
+                        <td>8:30</td>
+                        <td>M / B / B</td>
+                        <td>TITIOS X AFCEEE</td>
+                    </tr>
+                    <tr>
+                        <td>9:15</td>
+                        <td>M / B / A</td>
+                        <td>GERALDO X EMBAIXADORES</td>
+                    </tr>
+                    <tr>
+                        <td>10:00</td>
+                        <td>M / B / B</td>
+                        <td>VIAMÃO X AFCEEE</td>
+                    </tr>
+                    <tr>
+                        <td>10:45 </td>
+                        <td>M / B / A</td>
+                        <td>TYTOS X EMBAIXADORES</td>
+                    </tr>
+                    <tr>
+                        <td>11:30 </td>
+                        <td>M / B / B</td>
+                        <td>VIAMÃO X TITIOS</td>
+                    </tr>
+                    <tr>
+                        <td>12:15</td>
+                        <td>M / B / A</td>
+                        <td>TYTOS X GERALDO</td>
+                    </tr>
+                    <tr>
+                        <td>13:00</td>
+                        <td>M / A / C</td>
+                        <td>UNITED X VETERANOS</td>
+                    </tr>
+                    <tr>
+                        <td>13:45</td>
+                        <td>M / B / C</td>
+                        <td>PANTERAS X MUSTANGS</td>
+                    </tr>
+                    <tr>
+                        <td>14:30</td>
+                        <td>M / B / D</td>
+                        <td>SCISSORS X TESOURINHA</td>
+                    </tr>
+                    <tr>
+                        <td>15:15</td>
+                        <td>M / B / C</td>
+                        <td>UNITED X JAWS</td>
+                    </tr>
+                    <tr>
+                        <td>16:00</td>
+                        <td>M / B / C</td>
+                        <td>GURIS X MUSTANGS</td>
+                    </tr>
+                    <tr>
+                        <td>16:45</td>
+                        <td>M / B / D</td>
+                        <td>MONSTARS X SCISSORS</td>
+                    </tr>
+                    <tr>
+                        <td>17:30</td>
+                        <td>M / B / C</td>
+                        <td>GURIS X PANTERAS</td>
+                    </tr>
+                    <tr>
+                        <td>18:15</td>
+                        <td>M / B / D</td>
+                        <td>MONSTARS X TESOURINHA</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="rodada4" class="col s12">
+                <table class="highlight responsive-table white">
+                    <tr class="data-local">
+                        <td>09/06 DOMINGO</td>
+                        <td colspan="2">Tesourinha, av. Érico Veríssimo s nº:</td>
+                    </tr>
+                    <tr class="tr-title">
+                        <td> Hora</td>
+                        <td>Naipe / Série / Chave</td>
+                        <td>Jogo</td>
+                    </tr>
+                    <tr>
+                        <td>8:30</td>
+                        <td>M / B / B</td>
+                        <td>TITIOS X AFCEEE</td>
+                    </tr>
+                    <tr>
+                        <td>9:15</td>
+                        <td>M / B / A</td>
+                        <td>GERALDO X EMBAIXADORES</td>
+                    </tr>
+                    <tr>
+                        <td>10:00</td>
+                        <td>M / B / B</td>
+                        <td>VIAMÃO X AFCEEE</td>
+                    </tr>
+                    <tr>
+                        <td>10:45 </td>
+                        <td>M / B / A</td>
+                        <td>TYTOS X EMBAIXADORES</td>
+                    </tr>
+                    <tr>
+                        <td>11:30 </td>
+                        <td>M / B / B</td>
+                        <td>VIAMÃO X TITIOS</td>
+                    </tr>
+                    <tr>
+                        <td>12:15</td>
+                        <td>M / B / A</td>
+                        <td>TYTOS X GERALDO</td>
+                    </tr>
+                    <tr>
+                        <td>13:00</td>
+                        <td>M / A / C</td>
+                        <td>UNITED X VETERANOS</td>
+                    </tr>
+                    <tr>
+                        <td>13:45</td>
+                        <td>M / B / C</td>
+                        <td>PANTERAS X MUSTANGS</td>
+                    </tr>
+                    <tr>
+                        <td>14:30</td>
+                        <td>M / B / D</td>
+                        <td>SCISSORS X TESOURINHA</td>
+                    </tr>
+                    <tr>
+                        <td>15:15</td>
+                        <td>M / B / C</td>
+                        <td>UNITED X JAWS</td>
+                    </tr>
+                    <tr>
+                        <td>16:00</td>
+                        <td>M / B / C</td>
+                        <td>GURIS X MUSTANGS</td>
+                    </tr>
+                    <tr>
+                        <td>16:45</td>
+                        <td>M / B / D</td>
+                        <td>MONSTARS X SCISSORS</td>
+                    </tr>
+                    <tr>
+                        <td>17:30</td>
+                        <td>M / B / C</td>
+                        <td>GURIS X PANTERAS</td>
+                    </tr>
+                    <tr>
+                        <td>18:15</td>
+                        <td>M / B / D</td>
+                        <td>MONSTARS X TESOURINHA</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="rodada5" class="col s12">
+                <table class="highlight responsive-table white">
+                    <tr class="data-local">
+                        <td> 16/06 DOMINGO</td>
+                        <td colspan="2">Tesourinha, av. Érico Veríssimo s nº:</td>
+                    </tr>
+                    <tr class="tr-title">
+                        <td> Hora</td>
+                        <td>Naipe / Série / Chave</td>
+                        <td>Jogo</td>
+                    </tr>
+                    <tr>
+                        <td>8:30</td>
+                        <td>M / B / B</td>
+                        <td>TITIOS X AFCEEE</td>
+                    </tr>
+                    <tr>
+                        <td>9:15</td>
+                        <td>M / B / A</td>
+                        <td>GERALDO X EMBAIXADORES</td>
+                    </tr>
+                    <tr>
+                        <td>10:00</td>
+                        <td>M / B / B</td>
+                        <td>VIAMÃO X AFCEEE</td>
+                    </tr>
+                    <tr>
+                        <td>10:45 </td>
+                        <td>M / B / A</td>
+                        <td>TYTOS X EMBAIXADORES</td>
+                    </tr>
+                    <tr>
+                        <td>11:30 </td>
+                        <td>M / B / B</td>
+                        <td>VIAMÃO X TITIOS</td>
+                    </tr>
+                    <tr>
+                        <td>12:15</td>
+                        <td>M / B / A</td>
+                        <td>TYTOS X GERALDO</td>
+                    </tr>
+                    <tr>
+                        <td>13:00</td>
+                        <td>M / A / C</td>
+                        <td>UNITED X VETERANOS</td>
+                    </tr>
+                    <tr>
+                        <td>13:45</td>
+                        <td>M / B / C</td>
+                        <td>PANTERAS X MUSTANGS</td>
+                    </tr>
+                    <tr>
+                        <td>14:30</td>
+                        <td>M / B / D</td>
+                        <td>SCISSORS X TESOURINHA</td>
+                    </tr>
+                    <tr>
+                        <td>15:15</td>
+                        <td>M / B / C</td>
+                        <td>UNITED X JAWS</td>
+                    </tr>
+                    <tr>
+                        <td>16:00</td>
+                        <td>M / B / C</td>
+                        <td>GURIS X MUSTANGS</td>
+                    </tr>
+                    <tr>
+                        <td>16:45</td>
+                        <td>M / B / D</td>
+                        <td>MONSTARS X SCISSORS</td>
+                    </tr>
+                    <tr>
+                        <td>17:30</td>
+                        <td>M / B / C</td>
+                        <td>GURIS X PANTERAS</td>
+                    </tr>
+                    <tr>
+                        <td>18:15</td>
+                        <td>M / B / D</td>
+                        <td>MONSTARS X TESOURINHA</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="rodada6" class="col s12">
+                <table class="highlight responsive-table white">
+                    <tr class="data-local">
+                        <td>16/06 DOMINGO</td>
+                        <td colspan="2">Tesourinha, av. Érico Veríssimo s nº:</td>
+                    </tr>
+                    <tr class="tr-title">
+                        <td> Hora</td>
+                        <td>Naipe / Série / Chave</td>
+                        <td>Jogo</td>
+                    </tr>
+                    <tr>
+                        <td>8:30</td>
+                        <td>M / B / B</td>
+                        <td>TITIOS X AFCEEE</td>
+                    </tr>
+                    <tr>
+                        <td>9:15</td>
+                        <td>M / B / A</td>
+                        <td>GERALDO X EMBAIXADORES</td>
+                    </tr>
+                    <tr>
+                        <td>10:00</td>
+                        <td>M / B / B</td>
+                        <td>VIAMÃO X AFCEEE</td>
+                    </tr>
+                    <tr>
+                        <td>10:45 </td>
+                        <td>M / B / A</td>
+                        <td>TYTOS X EMBAIXADORES</td>
+                    </tr>
+                    <tr>
+                        <td>11:30 </td>
+                        <td>M / B / B</td>
+                        <td>VIAMÃO X TITIOS</td>
+                    </tr>
+                    <tr>
+                        <td>12:15</td>
+                        <td>M / B / A</td>
+                        <td>TYTOS X GERALDO</td>
+                    </tr>
+                    <tr>
+                        <td>13:00</td>
+                        <td>M / A / C</td>
+                        <td>UNITED X VETERANOS</td>
+                    </tr>
+                    <tr>
+                        <td>13:45</td>
+                        <td>M / B / C</td>
+                        <td>PANTERAS X MUSTANGS</td>
+                    </tr>
+                    <tr>
+                        <td>14:30</td>
+                        <td>M / B / D</td>
+                        <td>SCISSORS X TESOURINHA</td>
+                    </tr>
+                    <tr>
+                        <td>15:15</td>
+                        <td>M / B / C</td>
+                        <td>UNITED X JAWS</td>
+                    </tr>
+                    <tr>
+                        <td>16:00</td>
+                        <td>M / B / C</td>
+                        <td>GURIS X MUSTANGS</td>
+                    </tr>
+                    <tr>
+                        <td>16:45</td>
+                        <td>M / B / D</td>
+                        <td>MONSTARS X SCISSORS</td>
+                    </tr>
+                    <tr>
+                        <td>17:30</td>
+                        <td>M / B / C</td>
+                        <td>GURIS X PANTERAS</td>
+                    </tr>
+                    <tr>
+                        <td>18:15</td>
+                        <td>M / B / D</td>
+                        <td>MONSTARS X TESOURINHA</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="rodada7" class="col s12">
+                <table class="highlight responsive-table white">
+                    <tr class="data-local">
+                        <td>07/07 DOMINGO</td>
+                        <td colspan="2">Tesourinha, av. Érico Veríssimo s nº:</td>
+                    </tr>
+                    <tr class="tr-title">
+                        <td> Hora</td>
+                        <td>Naipe / Série / Chave</td>
+                        <td>Jogo</td>
+                    </tr>
+                    <tr>
+                        <td>8:30</td>
+                        <td>M / B / B</td>
+                        <td>TITIOS X AFCEEE</td>
+                    </tr>
+                    <tr>
+                        <td>9:15</td>
+                        <td>M / B / A</td>
+                        <td>GERALDO X EMBAIXADORES</td>
+                    </tr>
+                    <tr>
+                        <td>10:00</td>
+                        <td>M / B / B</td>
+                        <td>VIAMÃO X AFCEEE</td>
+                    </tr>
+                    <tr>
+                        <td>10:45 </td>
+                        <td>M / B / A</td>
+                        <td>TYTOS X EMBAIXADORES</td>
+                    </tr>
+                    <tr>
+                        <td>11:30 </td>
+                        <td>M / B / B</td>
+                        <td>VIAMÃO X TITIOS</td>
+                    </tr>
+                    <tr>
+                        <td>12:15</td>
+                        <td>M / B / A</td>
+                        <td>TYTOS X GERALDO</td>
+                    </tr>
+                    <tr>
+                        <td>13:00</td>
+                        <td>M / A / C</td>
+                        <td>UNITED X VETERANOS</td>
+                    </tr>
+                    <tr>
+                        <td>13:45</td>
+                        <td>M / B / C</td>
+                        <td>PANTERAS X MUSTANGS</td>
+                    </tr>
+                    <tr>
+                        <td>14:30</td>
+                        <td>M / B / D</td>
+                        <td>SCISSORS X TESOURINHA</td>
+                    </tr>
+                    <tr>
+                        <td>15:15</td>
+                        <td>M / B / C</td>
+                        <td>UNITED X JAWS</td>
+                    </tr>
+                    <tr>
+                        <td>16:00</td>
+                        <td>M / B / C</td>
+                        <td>GURIS X MUSTANGS</td>
+                    </tr>
+                    <tr>
+                        <td>16:45</td>
+                        <td>M / B / D</td>
+                        <td>MONSTARS X SCISSORS</td>
+                    </tr>
+                    <tr>
+                        <td>17:30</td>
+                        <td>M / B / C</td>
+                        <td>GURIS X PANTERAS</td>
+                    </tr>
+                    <tr>
+                        <td>18:15</td>
+                        <td>M / B / D</td>
+                        <td>MONSTARS X TESOURINHA</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="rodada8" class="col s12">
+                <table class="highlight responsive-table white">
+                    <tr class="data-local">
+                        <td>14/07 DOMINGO</td>
+                        <td colspan="2">Tesourinha, av. Érico Veríssimo s nº:</td>
+                    </tr>
+                    <tr class="tr-title">
+                        <td> Hora</td>
+                        <td>Naipe / Série / Chave</td>
+                        <td>Jogo</td>
+                    </tr>
+                    <tr>
+                        <td>8:30</td>
+                        <td>M / B / B</td>
+                        <td>TITIOS X AFCEEE</td>
+                    </tr>
+                    <tr>
+                        <td>9:15</td>
+                        <td>M / B / A</td>
+                        <td>GERALDO X EMBAIXADORES</td>
+                    </tr>
+                    <tr>
+                        <td>10:00</td>
+                        <td>M / B / B</td>
+                        <td>VIAMÃO X AFCEEE</td>
+                    </tr>
+                    <tr>
+                        <td>10:45 </td>
+                        <td>M / B / A</td>
+                        <td>TYTOS X EMBAIXADORES</td>
+                    </tr>
+                    <tr>
+                        <td>11:30 </td>
+                        <td>M / B / B</td>
+                        <td>VIAMÃO X TITIOS</td>
+                    </tr>
+                    <tr>
+                        <td>12:15</td>
+                        <td>M / B / A</td>
+                        <td>TYTOS X GERALDO</td>
+                    </tr>
+                    <tr>
+                        <td>13:00</td>
+                        <td>M / A / C</td>
+                        <td>UNITED X VETERANOS</td>
+                    </tr>
+                    <tr>
+                        <td>13:45</td>
+                        <td>M / B / C</td>
+                        <td>PANTERAS X MUSTANGS</td>
+                    </tr>
+                    <tr>
+                        <td>14:30</td>
+                        <td>M / B / D</td>
+                        <td>SCISSORS X TESOURINHA</td>
+                    </tr>
+                    <tr>
+                        <td>15:15</td>
+                        <td>M / B / C</td>
+                        <td>UNITED X JAWS</td>
+                    </tr>
+                    <tr>
+                        <td>16:00</td>
+                        <td>M / B / C</td>
+                        <td>GURIS X MUSTANGS</td>
+                    </tr>
+                    <tr>
+                        <td>16:45</td>
+                        <td>M / B / D</td>
+                        <td>MONSTARS X SCISSORS</td>
+                    </tr>
+                    <tr>
+                        <td>17:30</td>
+                        <td>M / B / C</td>
+                        <td>GURIS X PANTERAS</td>
+                    </tr>
+                    <tr>
+                        <td>18:15</td>
+                        <td>M / B / D</td>
+                        <td>MONSTARS X TESOURINHA</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <section id="classificacao">
+        <h2>Classificação</h2>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
