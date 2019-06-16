@@ -1,5 +1,6 @@
 /*Modifica cor navbar*/
 
+
 .nav-wrapper>ul>li>a,
 .nav-wrapper>.button-collapse {
     color: #1C7CC5;
@@ -116,24 +117,43 @@ section#jogos {
     z-index: 900;
     padding: 210px 5px 50%;
     color: #618FBC;
-    background: rgba(227, 133, 1, 1);
 
 }
 
-section#jogos>h2, p {
-    color: #fff;
+.tabela-geral, .tabela-geral > table {
+    border-top: 1px solid #618FBC;
+    border-bottom: 1px solid #618FBC;
+}
+
+section#jogos>h2,
+p {
+    color: #1C7CC5;
     padding-left: 10px;
 }
 
-.tr-title > td {
+.tr-title>td {
     font-weight: bold;
-    color: #C75A14;
+    color: #618FBC;
+    font-variant: small-caps;
     background: #fff;
 }
 
-.tabs > .tab > a{
+.centered>.tr-title::after>td {
+    font-weight: bold;
+    color: #618FBC;
+    font-variant: small-caps;
+    background: #fff;
+}
+
+.tabs>.tab>a {
     color: #618FBC;
     font-weight: bold;
+}
+
+.tabs>.tab>a.active {
+    background: #618FBC;
+    border-bottom: #0C2336;
+    color: #fff;
 }
 
 #rodada1,
@@ -147,25 +167,36 @@ section#jogos>h2, p {
     height: auto;
 }
 
-
-#jogos .data-local > td{
-    background: #618FBC;
+#jogos .data-local>td {
+    background: #fff;
     font-weight: bold;
-    color: #eee;
+    color: #0C2336;
+    border-bottom: 1px solid #1C7CC5;
 }
-
-
 
 section#classificacao {
     position: absolute;
-    top: 360%;
+    top: 380%;
+    background: #fff;
+    width: 100%;
+    height: auto;
+    min-height: 120vh;
+    z-index: 900;
+    padding: 210px 5px 50%;
+    color: #C75A14;
+}
+
+section#inscricao {
+    position: absolute;
+    top: 500%;
     background: #fff;
     width: 100%;
     height: auto;
     z-index: 900;
     padding: 210px 5px 50%;
-    color: #C75A14;
+    color: #1C7CC5;
 }
+
 
 
 @media (max-width: 575.98px) {
@@ -181,6 +212,10 @@ section#classificacao {
         width: 100%;
         z-index: 881;
         text-align: center;
+    }
+
+    section#jogos, section#classificacao, section#inscricao {
+        padding: 100px 5px 50%;    
     }
 
     #header-content>h3 {

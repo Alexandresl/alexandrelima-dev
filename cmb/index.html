@@ -86,7 +86,7 @@
 
         <p>Selecione a Rodada</p>
 
-        <div class="row">
+        <div class="row tabela-geral">
             <div class="col s12">
                 <ul class="tabs">
                     <div class="col l2 xl2"></div>
@@ -105,7 +105,7 @@
 
             <div id="rodada1" class="col s12">
 
-                <table class="highlight responsive-table white">
+                <table class="highlight centered white">
                     <tr class="data-local">
                         <td>19/05 DOMINGO</td>
                         <td colspan="2">Tesourinha, av. Érico Veríssimo s nº:</td>
@@ -189,7 +189,7 @@
 
             </div>
             <div id="rodada2" class="col s12">
-                <table class="highlight responsive-table white">
+                <table class="highlight centered white">
                     <tr class="data-local">
                         <td>26 /05 DOMINGO</td>
                         <td colspan="2">Tesourinha, av. Érico Veríssimo s nº:</td>
@@ -272,7 +272,7 @@
                 </table>
             </div>
             <div id="rodada3" class="col s12">
-                <table class="highlight responsive-table white">
+                <table class="highlight centered white">
                     <tr class="data-local">
                         <td>26 /05 DOMINGO</td>
                         <td colspan="2">Tesourinha, av. Érico Veríssimo s nº:</td>
@@ -355,7 +355,7 @@
                 </table>
             </div>
             <div id="rodada4" class="col s12">
-                <table class="highlight responsive-table white">
+                <table class="highlight centered white">
                     <tr class="data-local">
                         <td>09/06 DOMINGO</td>
                         <td colspan="2">Tesourinha, av. Érico Veríssimo s nº:</td>
@@ -438,7 +438,7 @@
                 </table>
             </div>
             <div id="rodada5" class="col s12">
-                <table class="highlight responsive-table white">
+                <table class="highlight centered white">
                     <tr class="data-local">
                         <td> 16/06 DOMINGO</td>
                         <td colspan="2">Tesourinha, av. Érico Veríssimo s nº:</td>
@@ -521,7 +521,7 @@
                 </table>
             </div>
             <div id="rodada6" class="col s12">
-                <table class="highlight responsive-table white">
+                <table class="highlight centered white">
                     <tr class="data-local">
                         <td>16/06 DOMINGO</td>
                         <td colspan="2">Tesourinha, av. Érico Veríssimo s nº:</td>
@@ -604,7 +604,7 @@
                 </table>
             </div>
             <div id="rodada7" class="col s12">
-                <table class="highlight responsive-table white">
+                <table class="highlight centered white">
                     <tr class="data-local">
                         <td>07/07 DOMINGO</td>
                         <td colspan="2">Tesourinha, av. Érico Veríssimo s nº:</td>
@@ -687,7 +687,7 @@
                 </table>
             </div>
             <div id="rodada8" class="col s12">
-                <table class="highlight responsive-table white">
+                <table class="highlight centered white">
                     <tr class="data-local">
                         <td>14/07 DOMINGO</td>
                         <td colspan="2">Tesourinha, av. Érico Veríssimo s nº:</td>
@@ -777,7 +777,107 @@
 
     <section id="classificacao">
         <h2>Classificação</h2>
+
+        <table class="bordered centered">
+            <thead>
+                <tr>
+                    <th>MASCULINO</th>
+                    <th>FEMININO</th>
+                </tr>
+            </thead>
+
+            <tr>
+                <td>
+                    <!-- Modal Trigger -->
+                    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Série A</a>
+                    <a class="waves-effect waves-light btn modal-trigger" href="#modal2">Série B</a>
+                </td>
+                <td>
+                    <a class="waves-effect waves-light btn modal-trigger" href="#modal3">Série A</a>
+                </td>
+            </tr>
+        </table>
     </section>
+
+    <section id="inscricao">
+        <h2>Inscrição</h2>
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <p>
+                        <input name="categoria" type="radio" id="m" />
+                        <label for="m">Masculino</label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <input name="categoria" type="radio" id="f" />
+                        <label for="f">Feminino</label>
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="nomeEquipe" type="text" class="validate">
+                        <label for="nomeEquipe">Nome da equipe</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="responsavel" type="text" class="validate">
+                        <label for="responsavel">Responsável</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">phone</i>
+                        <input id="icon_telephone" type="tel" class="validate">
+                        <label for="icon_telephone">Telephone</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">mail</i>
+                        <input id="email" type="email" class="validate">
+                        <label for="email">E-mail</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+
+    <!-- Modais -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Masculino - Séria A</h4>
+            <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <h4>Masculino - Séria B</h4>
+            <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <h4>Feminino - Séria A</h4>
+            <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+        </div>
+    </div> -->
+    <!-- Modais-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/materialize.js"></script>
