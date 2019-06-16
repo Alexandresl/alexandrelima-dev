@@ -93,6 +93,10 @@ section#sobre {
     color: #fff;
 }
 
+section#sobre p {
+    color: #fff;
+}
+
 .p-icon a span {
     height: 1em;
     vertical-align: 35%;
