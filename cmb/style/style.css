@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.mask-bg {
+    position: fixed;
+	min-width: 1024px; 
+    min-height: 100%;
+    width: auto; 
+    height: auto;
+    right: 0;
+    z-index: 880;
+    background: url(../assets/mask-bg.png) repeat-y;
+	
+}
+
+.bg-video{
+	position: fixed; 
+	left: 0; 
+	bottom: 0;
+	min-width: 100%; 
+	min-height: 100%;
+	width: auto; 
+	height: auto; 
+	z-index: -800;
+	background: url(../assets/video-img.png) no-repeat;
+	background-size: cover; 
+}
+
+nav {
+    position: fixed;
+    z-index: 999;
+    height: 78px;
+    width: 100%;
+    background: hsla(0, 0%, 100%, 0.824);
+    box-shadow: 1px 1px 2px #333;
+}
+
+nav > ul {
+    text-align-last: right;
+    width: 100%;
+    margin-top: 20px;
+}
+
+nav > ul > li{    
+    display: inline-block;
+    font-size: 28px;
+}
+
+nav > ul > li > a {
+    color: #1C7CC5;
+    text-decoration: none;
+    margin: 0 20px 0 10px;
+}
+
+#logo {
+    position: fixed;
+    z-index: 1000;
+}
+
+
+#header-content {
+    position: fixed; 
+	left: 50%; 
+	top: 35%;
+	min-width: 30%; 
+	min-height: 100%;
+	width: auto; 
+	height: auto; 
+    z-index: 881;
+    text-align: right;
+    padding-right: 20%;
+}
+
+#header-content > h3 {
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 0;
+}
+
+#header-content > a {
+    width: 80%;
+    height: 100px;
+    background: #fff;
+    font-size: 2em;
+    text-decoration: none;
+    font-weight: normal;
+    padding: 10px 15px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    color: #618FBC;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 0 0 1px #0C2336;
+}
+
+#header-content > p {
+    margin-top: 40px;
+    font-size: 1.8em;
+    color: #fff;
+}
+
+section#home {
+    position: absolute;
+    top: 100%;
+    background: #E38401;
+    width: 90%;
+    z-index: 900;
+    padding: 250px 5% 50px;
+    color: #fff;
+    height: 60%;
+}
+
+section > h2 {
+    margin-bottom: 20px;
+}
+
+section > p {
+    font-size: 1.8em;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    font-weight: 200;
+}
+
+section#tabela {
+    position: absolute;
+    top: 200%;
+    background: #fff;
+    width: 90%;
+    z-index: 900;
+    padding: 250px 5% 50%;
+    color: #fff;
+    height: 60%;
+    color: #C75A14;
+}
+
+.rodada {
+    display: inline-block;
+}
+
+.rodada > form > label {
+    display: inline-block;
+}
+
+.rodada > form > select {
+    display: inline-block;
+}
