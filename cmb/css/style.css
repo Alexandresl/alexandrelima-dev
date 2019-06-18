@@ -89,7 +89,7 @@ section#sobre {
     width: 100%;
     height: 100vh;
     z-index: 900;
-    padding: 210px 5% 50px;
+    padding: 130px 5% 50px;
     color: #fff;
 }
 
@@ -119,7 +119,7 @@ section#jogos {
     width: 100%;
     height: auto;
     z-index: 900;
-    padding: 210px 5px 50%;
+    padding: 130px 5px 50%;
     color: #618FBC;
 
 }
@@ -186,7 +186,7 @@ section#classificacao {
     height: auto;
     min-height: 120vh;
     z-index: 900;
-    padding: 210px 5px 50%;
+    padding: 130px 5px 50%;
     color: #C75A14;
 }
 
@@ -196,14 +196,20 @@ section#inscricao {
     background: #fff;
     width: 100%;
     height: auto;
+    min-height: 120vh;
     z-index: 900;
-    padding: 210px 5px 50%;
+    padding: 130px 5px 50%;
     color: #1C7CC5;
 }
 
 
 
 @media (max-width: 575.98px) {
+
+    .brand-logo>img {
+        width: 40vw;
+        max-width: 180px;
+    }
 
 
     /* conteúdo - home */
@@ -216,10 +222,6 @@ section#inscricao {
         width: 100%;
         z-index: 881;
         text-align: center;
-    }
-
-    section#jogos, section#classificacao, section#inscricao {
-        padding: 100px 5px 50%;    
     }
 
     #header-content>h3 {
@@ -236,11 +238,20 @@ section#inscricao {
         padding: 120px 5% 50px;
     }
 
+    section#sobre, section#jogos, section#classificacao, section#inscricao {
+        padding: 70px 5% 50px;
+    }
+
 }
 
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+
+    .brand-logo>img {
+        width: 40vw;
+        max-width: 180px;
+    }
 
     /* conteúdo - home */
 
@@ -265,8 +276,8 @@ section#inscricao {
         width: 100%;
     }
 
-    section#sobre {
-        padding: 150px 5% 50px;
+    section#sobre, section#jogos, section#classificacao, section#inscricao {
+        padding: 70px 5% 50px;
     }
 
 
@@ -274,6 +285,11 @@ section#inscricao {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+
+    .brand-logo>img {
+        width: 40vw;
+        max-width: 200px;
+    }
 
     /* conteúdo - home */
 
@@ -285,6 +301,7 @@ section#inscricao {
         font-size: 1.8em;
     }
 
+    
 
 }
 
@@ -301,6 +318,7 @@ section#inscricao {
         font-size: 1.6em;
     }
 
+    
 
 }
 

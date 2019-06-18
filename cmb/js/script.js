@@ -28,13 +28,14 @@ $('.menu-item > a').click(function () {
 function scrollBanner() {
     var scrollPos;
     var headerText = document.querySelector('#header-content');
+    var logoPrincipal = document.querySelector('.brand-logo > img');
     
     scrollPos = window.scrollY;
 
     if (scrollPos <= 600) {
         headerText.style.transform = "translateY(" + (-scrollPos / 3) + "px" + ")";
         headerText.style.opacity = 1 - (scrollPos / 600);
-        
+        logoPrincipal.style.width = 100 - (scrollPos / 12) + '%';
     }
 }
 
