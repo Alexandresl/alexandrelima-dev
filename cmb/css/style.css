@@ -127,6 +127,8 @@ section#jogos {
 .tabela-geral, .tabela-geral > table {
     border-top: 1px solid #618FBC;
     border-bottom: 1px solid #618FBC;
+    width: 80%;
+    margin: 10px 10%;
 }
 
 section#jogos>h2,
