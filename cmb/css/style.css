@@ -124,14 +124,15 @@ section#jogos {
 
 }
 
-.tabela-geral, .tabela-geral > table {
+.tabela-geral,
+.tabela-geral>table {
     border: 1px solid #618FBC;
     width: 80%;
     margin: 10px 10%;
 }
 
-section#jogos > h2,
-section#jogos > p {
+section#jogos>h2,
+section#jogos>p {
     color: #1C7CC5;
     padding-left: 10%;
 }
@@ -143,7 +144,7 @@ section#jogos > p {
     background: #fff;
 }
 
-.centered>.tr-title::after > td {
+.centered>.tr-title::after>td {
     font-weight: bold;
     color: #0C2336;
     font-variant: small-caps;
@@ -182,7 +183,7 @@ section#jogos > p {
 
 section#classificacao {
     position: absolute;
-    top: 360%;
+    top: 370%;
     background: #fff;
     width: 100%;
     height: auto;
@@ -240,7 +241,10 @@ section#inscricao {
         padding: 120px 5% 50px;
     }
 
-    section#sobre, section#jogos, section#classificacao, section#inscricao {
+    section#sobre,
+    section#jogos,
+    section#classificacao,
+    section#inscricao {
         padding: 70px 5% 50px;
     }
 
@@ -278,7 +282,10 @@ section#inscricao {
         width: 100%;
     }
 
-    section#sobre, section#jogos, section#classificacao, section#inscricao {
+    section#sobre,
+    section#jogos,
+    section#classificacao,
+    section#inscricao {
         padding: 70px 5% 50px;
     }
 
@@ -303,7 +310,15 @@ section#inscricao {
         font-size: 1.8em;
     }
 
-    
+    .tabela-geral,
+    .tabela-geral>table {
+        margin: 10px 2%;
+    }
+
+    section#jogos>h2,
+    section#jogos>p {
+        padding-left: 2%;
+    }
 
 }
 
@@ -320,7 +335,7 @@ section#inscricao {
         font-size: 1.6em;
     }
 
-    
+
 
 }
 
