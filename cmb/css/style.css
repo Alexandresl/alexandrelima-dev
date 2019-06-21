@@ -248,6 +248,18 @@ section#inscricao {
         padding: 70px 5% 50px;
     }
 
+    .tabela-geral,
+    .tabela-geral>table {
+        margin: 10px 2%;
+        width: 96%;
+    }
+
+    section#jogos>h2,
+    section#jogos>p {
+        padding-left: 2%;
+        width: 96%;
+    }
+
 }
 
 
@@ -287,6 +299,18 @@ section#inscricao {
     section#classificacao,
     section#inscricao {
         padding: 70px 5% 50px;
+    }
+
+    .tabela-geral,
+    .tabela-geral>table {
+        margin: 10px 2%;
+        width: 96%;
+    }
+
+    section#jogos>h2,
+    section#jogos>p {
+        padding-left: 2%;
+        width: 96%;
     }
 
 
@@ -335,18 +359,6 @@ section#inscricao {
 
     #header-content>a {
         font-size: 1.6em;
-    }
-
-    .tabela-geral,
-    .tabela-geral>table {
-        margin: 10px 2%;
-        width: 96%;
-    }
-
-    section#jogos>h2,
-    section#jogos>p {
-        padding-left: 2%;
-        width: 96%;
     }
 
 }
