@@ -313,11 +313,13 @@ section#inscricao {
     .tabela-geral,
     .tabela-geral>table {
         margin: 10px 2%;
+        width: 96%;
     }
 
     section#jogos>h2,
     section#jogos>p {
         padding-left: 2%;
+        width: 96%;
     }
 
 }
@@ -335,7 +337,17 @@ section#inscricao {
         font-size: 1.6em;
     }
 
+    .tabela-geral,
+    .tabela-geral>table {
+        margin: 10px 2%;
+        width: 96%;
+    }
 
+    section#jogos>h2,
+    section#jogos>p {
+        padding-left: 2%;
+        width: 96%;
+    }
 
 }
 
