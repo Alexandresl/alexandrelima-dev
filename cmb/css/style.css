@@ -120,33 +120,32 @@ section#jogos {
     height: auto;
     z-index: 900;
     padding: 130px 5px 50%;
-    color: #618FBC;
+    color: #0C2336;
 
 }
 
 .tabela-geral, .tabela-geral > table {
-    border-top: 1px solid #618FBC;
-    border-bottom: 1px solid #618FBC;
+    border: 1px solid #618FBC;
     width: 80%;
     margin: 10px 10%;
 }
 
-section#jogos>h2,
-p {
+section#jogos > h2,
+section#jogos > p {
     color: #1C7CC5;
-    padding-left: 10px;
+    padding-left: 10%;
 }
 
 .tr-title>td {
     font-weight: bold;
-    color: #618FBC;
+    color: #0C2336;
     font-variant: small-caps;
     background: #fff;
 }
 
-.centered>.tr-title::after>td {
+.centered>.tr-title::after > td {
     font-weight: bold;
-    color: #618FBC;
+    color: #0C2336;
     font-variant: small-caps;
     background: #fff;
 }
@@ -173,16 +172,17 @@ p {
     height: auto;
 }
 
-#jogos .data-local>td {
+#jogos .data-local {
     background: #fff;
     font-weight: bold;
     color: #0C2336;
-    border-bottom: 1px solid #1C7CC5;
+    border-top: 1px solid #1C7CC5;
+    font-size: 1.2em;
 }
 
 section#classificacao {
     position: absolute;
-    top: 380%;
+    top: 360%;
     background: #fff;
     width: 100%;
     height: auto;
