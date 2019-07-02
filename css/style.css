@@ -1,6 +1,8 @@
+/******************************[ Geral ]********************************/
+
 @font-face {
     font-family: 'FiraCode';
-    src: url('assets/FiraCode-Regular.ttf');
+    src: url('../assets/FiraCode-Regular.ttf');
 }
 
 * {
@@ -15,9 +17,46 @@ body {
     color: #fff;
 }
 
+h1 {
+    font-size: 1.8em;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+/******************************[ Nav ]********************************/
+
+nav {
+    font-size: 14px;
+    background: #303030;
+    box-shadow: 1px 1px 5px #333;
+    padding: 0 20px;
+}
+
+.logoP1 {
+    color: #BA3F3F;
+}
+
+.logoP2 {
+    color: #3F5BBA;
+}
+
+.logo {
+    font-size: 0.6em;
+    text-shadow: 1px 1px #444;
+    float: left;
+}
+
+/******************************[ Parallax ]********************************/
+
 header {
     position: fixed;
-    background-image: url(assets/header-background.jpg);
+    background-image: url(../assets/header-background.jpg);
     background-position: top;
     background-size: cover;
     height: 300px;
@@ -48,58 +87,13 @@ header {
     display: block;
 }
 
-nav {
-    font-size: 14px;
-    box-shadow: 1px 1px 5px #333;
-}
+/******************************[ container ]********************************/
 
-.red {
-    color: #BA3F3F;
-}
-
-.blue {
-    color: #3F5BBA;
-}
-
-.logo {
-    font-size: 1em;
-    text-shadow: 1px 1px #444;
-    float: left;
-}
-
-.container-fluid {
+.container {
     position: relative;
     font-size: 14px;
     top: 280px;
-    padding: 20px 0;
+    padding: 20px;
     background-color: #444;
     width: 100%;
-}
-
-.articles {
-    padding: 0 10px;
-}
-
-.container-fluid>h2 {
-    font-size: 1.8em;
-    padding: 0 15px;
-}
-
-.card {
-    margin: 10px 0;
-    color: #333 !important;
-}
-
-footer {
-    position: relative;
-    text-align: center;
-    border-top: 1px solid #333;
-    background: #222;
-    text-align: center;
-    bottom: -20px;
-    width: 100%;
-}
-
-footer>span {
-    line-height: 100px;
 }
