@@ -89,11 +89,11 @@ header {
 
 /******************************[ container ]********************************/
 
-.container {
+.content {
     position: relative;
     font-size: 14px;
     top: 280px;
-    padding: 20px;
+    padding: 10px 20px;
     background-color: #444;
-    width: 100%;
+    width: 100vw;
 }
