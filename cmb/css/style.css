@@ -84,7 +84,6 @@
 
 section#sobre {
     position: absolute;
-    top: 100%;
     background: #E38401;
     width: 100%;
     height: 100vh;
@@ -114,10 +113,9 @@ section#sobre p {
 
 section#jogos {
     position: absolute;
-    top: 200%;
     background: #fff;
     width: 100%;
-    height: auto;
+    height: 200vh;
     z-index: 900;
     padding: 130px 5px 50%;
     color: #0C2336;
@@ -183,28 +181,48 @@ section#jogos>p {
 
 section#classificacao {
     position: absolute;
-    top: 360%;
     background: #fff;
     width: 100%;
-    height: auto;
+    height: 100vh;
     min-height: 120vh;
     z-index: 900;
-    padding: 130px 5px 50%;
+    padding: 130px 10% 50%;
     color: #C75A14;
 }
 
 section#inscricao {
     position: absolute;
-    top: 450%;
     background: #fff;
     width: 100%;
     height: auto;
     min-height: 120vh;
     z-index: 900;
-    padding: 130px 5px 50%;
+    padding: 130px 10% 50%;
     color: #1C7CC5;
 }
 
+footer {
+    border-top: 1px solid #1C7CC5;
+    height: 50px;
+    z-index: 2000;
+    width: 100%;
+    padding: 0;
+}
+
+footer ul li{
+    display: inline-block;
+    
+}
+
+footer ul li a img {
+    height: 30px;
+    margin: 2px;
+}
+
+footer .end {
+    text-align: right;
+    width: 100%;
+}
 
 
 @media (max-width: 575.98px) {
@@ -261,9 +279,16 @@ section#inscricao {
     }
 
     section#classificacao {
-        top: 382%;
+        
     }
-    
+
+    section#inscricao {
+        
+    }
+
+    .classificacao > tr > td > a.btn{
+        margin-bottom: 10px;
+    }
 
 }
 
@@ -319,8 +344,10 @@ section#inscricao {
     }
 
     section#classificacao {
-        top: 378%;
+        
     }
+
+    
     
 }
 
@@ -355,7 +382,7 @@ section#inscricao {
     }
 
     section#classificacao {
-        top: 370%;
+        
     }
 
 }
@@ -374,7 +401,11 @@ section#inscricao {
     }
 
     section#classificacao {
-        top: 390%;
+        
+    }
+
+    section#inscricao {
+        
     }
 
 }
@@ -382,6 +413,9 @@ section#inscricao {
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     section#classificacao {
-        top: 408%;
+        
+    }
+
+    section#inscricao {
     }
 }

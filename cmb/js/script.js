@@ -23,19 +23,20 @@ $('.menu-item > a').click(function () {
     return false;
 });
 
-
 // Paralax
 function scrollBanner() {
     var scrollPos;
     var headerText = document.querySelector('#header-content');
     var logoPrincipal = document.querySelector('.brand-logo > img');
-    
+
     scrollPos = window.scrollY;
 
     if (scrollPos <= 600) {
         headerText.style.transform = "translateY(" + (-scrollPos / 3) + "px" + ")";
         headerText.style.opacity = 1 - (scrollPos / 600);
         logoPrincipal.style.width = 100 - (scrollPos / 12) + '%';
+    } else {
+        logoPrincipal.style.width = 50 + '%';
     }
 }
 
@@ -51,7 +52,34 @@ $(document).ready(function () {
 });
 
 // inicializa modais
-$(document).ready(function(){
+$(document).ready(function () {
     $('.modal').modal();
-  });
+});
+
+// Pegando o height dinâmicamente
+
+function atualizaTop() {
+
+    let headerContentHeight = $(".bg-video").outerHeight();
+    let sobreHeight = $("#sobre").outerHeight();
+    let jogosHeight = $("#jogos").outerHeight();
+    console.log(jogosHeight);
+    
+    
+    let classificacaoHeight = $("#classificacao").outerHeight();
+    let inscricaoHeight = $("#inscricao").outerHeight();
+
+    $("#sobre").css({ top: headerContentHeight + "px" });
+    $("#jogos").css({ top: (headerContentHeight + sobreHeight) + "px" });
+    $("#classificacao").css({ top: (headerContentHeight + sobreHeight + jogosHeight) + "px" });
+    $("#inscricao").css({ top: (headerContentHeight + sobreHeight + jogosHeight + classificacaoHeight) + "px" });
+
+}
+
+atualizaTop();
+
+$(window).resize(function () {
+    atualizaTop();
+});
+
 

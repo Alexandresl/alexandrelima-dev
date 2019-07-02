@@ -17,7 +17,7 @@
 
     <div class="mask-bg"></div>
 
-    <video src="assets/1283590222.ogv" autoplay muted auto loop class="bg-video">
+    <video src="assets/1283590222.ogv" autoplay muted loop class="bg-video">
         <source src="assets/1283590222.mp4" type="video/mp4">
         <source src="assets/1283590222.webm" type="video/webm">
         <source src="assets/1283590222.ogv" type="video/ogv">
@@ -62,8 +62,8 @@
             amigos e unidades da SMDSE, realizado em três divisões, série A e B no masculino e série
             única no feminino.</p>
 
-        <p class="p-icon"><a href="" class="white-text"><span>Conheça o regulamento</span><i
-                    class="material-icons">attach_file</i></a></p>
+        <p class="p-icon"><a class="modal-trigger" href="#modal5"><span>Conheça o regulamento</span><i
+            class="material-icons">attach_file</i></a></p>
         <p class="p-icon"><a href="" class="white-text"><span>Veja o histórico de anos anteriores</span><i
                     class="material-icons">hourglass_empty</i></a></p>
 
@@ -91,7 +91,7 @@
         <div class="row tabela-geral">
             <div class="col s12">
                 <ul class="tabs">
-                    
+                    <li class="col l2 xl2"></li>
                     <li class="tab col s1"><a href="#rodada1">1ª</a></li>
                     <li class="tab col s1"><a href="#rodada2">2ª</a></li>
                     <li class="tab col s1"><a href="#rodada3">3ª</a></li>
@@ -100,7 +100,7 @@
                     <li class="tab col s1"><a href="#rodada6">6ª</a></li>
                     <li class="tab col s1"><a href="#rodada7">7ª</a></li>
                     <li class="tab col s1"><a href="#rodada8">8ª</a></li>
-                    
+                    <li class="col l2 xl2"></li>
                 </ul>
                 <div class="col s2"></div>
             </div>
@@ -108,9 +108,7 @@
             <div id="rodada1" class="col s12">
 
                 <table class="centered white striped">
-                    <tr class="data-local">
-                        <td colspan="4">19/05 DOMINGO<br>Tesourinha, av. Érico Veríssimo s nº:</td>
-                    </tr>
+                    
                     <tr class="tr-title">
                         <td> Hora</td>
                         <td>Naipe / Série / Chave</td>
@@ -772,7 +770,7 @@
     <section id="classificacao">
         <h2>Classificação</h2>
 
-        <table class="bordered centered">
+        <table class="bordered centered classificacao">
             <thead>
                 <tr>
                     <th>MASCULINO</th>
@@ -837,7 +835,22 @@
                 </div>
             </form>
         </div>
-
+        <footer>
+            <div class="row">
+                <div class="col s3">
+                        <ul>
+                                <li><a href="#"><img src="assets/face-icon.png"></a></li>
+                                <li><a href="#"><img src="assets/insta-icon.png"></a></li>
+                                <li><a href="#"><img src="assets/twiter-icon.png"></a></li>
+                            </ul>
+                </div>
+                <div class="col s9">
+                        <p class="end">Prefeitura Municipal de Porto Alegre - Praça Montevidéo, 10 - Rio Grande do Sul - Brasil - CEP 90010-170</p>
+                </div>
+            </div>
+            
+            
+        </footer>
     </section>
 
 
@@ -845,7 +858,28 @@
     <div id="modal1" class="modal">
         <div class="modal-content">
             <h4>Masculino - Séria A</h4>
-            <p>A bunch of text</p>
+            <table class="highlight bordered">
+                <tr>
+                    <td>time1</td>
+                    <td>Pontuação 0000</td>
+                </tr>
+                <tr>
+                    <td>time1</td>
+                    <td>Pontuação 0000</td>
+                </tr>
+                <tr>
+                    <td>time1</td>
+                    <td>Pontuação 0000</td>
+                </tr>
+                <tr>
+                    <td>time1</td>
+                    <td>Pontuação 0000</td>
+                </tr>
+                <tr>
+                    <td>time1</td>
+                    <td>Pontuação 0000</td>
+                </tr>
+            </table>
         </div>
         <div class="modal-footer">
             <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
@@ -870,8 +904,29 @@
         <div class="modal-footer">
             <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
         </div>
-    </div> -->
+    </div> 
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <h4>Feminino - Séria A</h4>
+            <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+        </div>
+    </div> 
+
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <h4>CAMPEONATO MUNICIPAL DE BASQUETEBOL 2019</h4>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+        </div>
+    </div> 
     <!-- Modais-->
+
+    
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/materialize.js"></script>
