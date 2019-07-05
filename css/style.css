@@ -135,17 +135,18 @@ section#jogos {
     position: absolute;
     background: #fff;
     width: 100%;
-    height: 230vh;
+    height: 200vh;
     z-index: 900;
     padding: 130px 5px 50%;
     color: #0C2336;
 
 }
 
-.tabela-geral,
-.tabela-geral>table {
+    .tabela-geral,
+    .tabela-geral>table {
     border: 1px solid #618FBC;
     width: 80%;
+    height: auto;
     margin: 10px 10%;
 }
 
@@ -188,7 +189,7 @@ section#jogos>p {
 #rodada6,
 #rodada7,
 #rodada8 {
-    height: auto;
+    height: 121vh;
 }
 
 #jogos .data-local {
