@@ -1,118 +1,441 @@
-/******************************[ Geral ]********************************/
-
-@font-face {
-    font-family: 'FiraCode';
-    src: url('../assets/FiraCode-Regular.ttf');
+a {
+    color: #fff;
 }
 
-* {
-    font-family: 'firaCode';
-    font-weight: normal;
-    margin: 0;
+a:hover {
+    color: rgb(54, 12, 12);
+}
+
+h5 {
+    text-align: center;
+}
+
+h4 {
+    display: block;
+}
+
+.maiuscula {
+    text-transform: uppercase;
+}
+
+/*Modifica cor navbar*/
+
+.nav-wrapper>ul>li>a,
+.nav-wrapper>.button-collapse {
+    color: #1C7CC5;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+/* tamanho do logo */
+
+.brand-logo>img {
+    width: 25vw;
+    max-width: 281px;
+}
+
+/* home backgrxound */
+
+.mask-bg {
+    position: fixed;
+    min-width: 1024px;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    right: 0;
+    z-index: 880;
+    background: url(../assets/mask-bg.png) repeat-y;
+}
+
+.bg-video {
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -800;
+    background: url(../assets/video-img.png) no-repeat;
+    background-size: cover;
+}
+
+/* conteúdo - home */
+
+#header-content {
+    position: fixed;
+    left: 50%;
+    top: 35%;
+    min-height: 100%;
+    width: 50%;
+    z-index: 881;
+    text-align: left;
+}
+
+#header-content>h3 {
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 20px;
+    width: 100%;
     padding: 0;
 }
 
-body {
-    background-color: #222;
-    color: #fff;
-}
-
-h1 {
-    font-size: 1.8em;
-}
-
-h2 {
-    font-size: 1.4em;
-}
-
-h3 {
-    font-size: 1.2em;
-}
-
-/******************************[ Nav ]********************************/
-
-nav {
-    font-size: 1em;
-    background: #303030;
-    box-shadow: 1px 1px 5px #333;
-    padding: 0 20px;
-}
-
-.logoP1 {
-    color: #BA3F3F;
-}
-
-.logoP2 {
-    color: #3F5BBA;
-}
-
-.logo {
-    font-size: 0.6em;
-    text-shadow: 1px 1px #444;
-    float: left;
-}
-
-/******************************[ Parallax ]********************************/
-
-header {
-    position: fixed;
-    background-image: url(../assets/header-background.jpg);
-    background-position: top;
-    background-size: cover;
-    height: 300px;
+#header-content > span.menu-item > a {
     width: 100%;
+    min-height: 100px;
+    background: #fff;
+    font-size: 1.0em;
+    text-decoration: none;
+    font-weight: normal;
+    padding: 10px 15px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    color: #618FBC;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 0 0 1px #0C2336;
+}
+
+#header-content>p {
+    margin-top: 40px;
+    font-size: 1.8em;
     color: #fff;
-    text-shadow: 1px 1px 1px #333;
+}
+
+section#sobre {
+    position: absolute;
+    background: #E38401;
+    width: 100%;
+    height: 100vh;
+    z-index: 900;
+    padding: 130px 5% 50px;
+    color: #fff;
+}
+
+section#sobre p {
+    color: #fff;
+}
+
+.p-icon a span {
+    height: 1em;
+    vertical-align: 35%;
+    text-decoration: underline;
+}
+
+.arbitragem>span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.arbitragem>a>img {
+    width: 80px;
+}
+
+section#jogos {
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: 230vh;
+    z-index: 900;
+    padding: 130px 5px 50%;
+    color: #0C2336;
+
+}
+
+.tabela-geral,
+.tabela-geral>table {
+    border: 1px solid #618FBC;
+    width: 80%;
+    margin: 10px 10%;
+}
+
+section#jogos>h2,
+section#jogos>p {
+    color: #1C7CC5;
+    padding-left: 10%;
+}
+
+.tr-title>td {
+    font-weight: bold;
+    color: #0C2336;
+    font-variant: small-caps;
+    background: #fff;
+}
+
+.centered>.tr-title::after>td {
+    font-weight: bold;
+    color: #0C2336;
+    font-variant: small-caps;
+    background: #fff;
+}
+
+.tabs>.tab>a {
+    color: #618FBC;
     font-weight: bold;
 }
 
-.header-title {
-    font-size: 1.6em;
-    text-align: center;
-    display: block;
-    margin: 100px auto 0;
-
+.tabs>.tab>a.active {
+    background: #618FBC;
+    border-bottom: #0C2336;
+    color: #fff;
 }
 
-.header-title div {
-    display: inline;
-    padding: 0 50px;
-    border-bottom: 1px solid #fff5;
-
+#rodada1,
+#rodada2,
+#rodada3,
+#rodada4,
+#rodada5,
+#rodada6,
+#rodada7,
+#rodada8 {
+    height: auto;
 }
 
-.header-text {
-    font-size: 1em;
-    text-align: center;
-    display: block;
+#jogos .data-local {
+    background: #fff;
+    font-weight: bold;
+    color: #0C2336;
+    border-top: 1px solid #1C7CC5;
+    font-size: 1.2em;
 }
 
-/******************************[ container ]********************************/
-
-.content {
-    position: relative;
-    font-size: 14px;
-    top: 280px;
-    padding: 10px 20px;
-    background-color: #444;
-    width: 100vw;
+section#classificacao {
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: 100vh;
+    min-height: 120vh;
+    z-index: 900;
+    padding: 130px 10% 50%;
+    color: #C75A14;
 }
 
-/* Extra small devices (portrait phones, less than 576px) */
+section#inscricao {
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: auto;
+    min-height: 120vh;
+    z-index: 900;
+    padding: 130px 10% 50%;
+    color: #1C7CC5;
+}
+
+footer {
+    border-top: 1px solid #1C7CC5;
+    height: 50px;
+    z-index: 2000;
+    width: 100%;
+    padding: 0;
+}
+
+footer ul li{
+    display: inline-block;
+    
+}
+
+footer ul li a img {
+    height: 30px;
+    margin: 2px;
+}
+
+footer .end {
+    text-align: right;
+    width: 100%;
+}
+
+
 @media (max-width: 575.98px) {
-    .logo {
-        font-size: 0.5em;
+
+    .brand-logo>img {
+        width: 40vw;
+        max-width: 180px;
     }
+
+
+    /* conteúdo - home */
+
+    #header-content {
+        position: fixed;
+        left: 0;
+        top: 35%;
+        min-height: 100%;
+        width: 100%;
+        z-index: 881;
+        text-align: center;
+    }
+
+    #header-content>h3 {
+        font-size: 1.4em;
+    }
+
+    #header-content>a {
+        font-size: 1.2em;
+        font-weight: 600;
+        width: 100%;
+    }
+
+    section#sobre {
+        padding: 120px 5% 50px;
+    }
+
+    section#sobre,
+    section#jogos,
+    section#classificacao,
+    section#inscricao {
+        padding: 70px 5% 50px;
+    }
+
+    .tabela-geral,
+    .tabela-geral>table {
+        margin: 10px 2%;
+        width: 96%;
+    }
+
+    section#jogos>h2,
+    section#jogos>p {
+        padding-left: 2%;
+        width: 96%;
+    }
+
+    section#classificacao {
+        
+    }
+
+    section#inscricao {
+        
+    }
+
+    .classificacao > tr > td > a.btn{
+        margin-bottom: 10px;
+    }
+
 }
+
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {}
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .brand-logo>img {
+        width: 40vw;
+        max-width: 180px;
+    }
+
+    /* conteúdo - home */
+
+
+    #header-content {
+        position: fixed;
+        left: 0;
+        top: 35%;
+        min-height: 100%;
+        width: 100%;
+        z-index: 881;
+        text-align: center;
+    }
+
+    #header-content>h3 {
+        font-size: 1.8em;
+    }
+
+    #header-content>a {
+        font-size: 1.4em;
+        font-weight: 600;
+        width: 100%;
+    }
+
+    section#sobre,
+    section#jogos,
+    section#classificacao,
+    section#inscricao {
+        padding: 70px 5% 50px;
+    }
+
+    .tabela-geral,
+    .tabela-geral>table {
+        margin: 10px 2%;
+        width: 96%;
+    }
+
+    section#jogos>h2,
+    section#jogos>p {
+        padding-left: 2%;
+        width: 96%;
+    }
+
+    section#classificacao {
+        
+    }
+
+    
+    
+}
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {}
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .brand-logo>img {
+        width: 40vw;
+        max-width: 200px;
+    }
+
+    /* conteúdo - home */
+
+    #header-content>h3 {
+        font-size: 2em;
+    }
+
+    #header-content>a {
+        font-size: 1.8em;
+    }
+
+    .tabela-geral,
+    .tabela-geral>table {
+        margin: 10px 2%;
+        width: 96%;
+    }
+
+    section#jogos>h2,
+    section#jogos>p {
+        padding-left: 2%;
+        width: 96%;
+    }
+
+    section#classificacao {
+        
+    }
+
+}
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) {}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    /* conteúdo - home */
+
+    #header-content>h3 {
+        font-size: 1.8em;
+    }
+
+    #header-content>a {
+        font-size: 1.6em;
+    }
+
+    section#classificacao {
+        
+    }
+
+    section#inscricao {
+        
+    }
+
+}
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    section#classificacao {
+        
+    }
+
+    section#inscricao {
+    }
+}
