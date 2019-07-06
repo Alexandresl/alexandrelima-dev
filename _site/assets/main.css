@@ -1,0 +1,91 @@
+/******************************[ Geral ]********************************/
+@font-face {
+  font-family: 'FiraCode';
+  src: url("../assets/FiraCode-Regular.ttf"); }
+* {
+  font-family: 'firaCode';
+  font-weight: normal;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #222;
+  color: #fff; }
+
+h1 {
+  font-size: 1.8em; }
+
+h2 {
+  font-size: 1.4em; }
+
+h3 {
+  font-size: 1.2em; }
+
+/******************************[ Nav ]********************************/
+nav {
+  font-size: 1em;
+  background: #303030;
+  box-shadow: 1px 1px 5px #333;
+  padding: 0 5%; }
+
+.logoP1 {
+  color: #BA3F3F; }
+
+.logoP2 {
+  color: #3F5BBA; }
+
+.logo {
+  font-size: 0.6em;
+  text-shadow: 1px 1px #444;
+  float: left; }
+
+/******************************[ Parallax ]********************************/
+header {
+  position: fixed;
+  background-image: url(../assets/header-background.jpg);
+  background-position: top;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  color: #fff;
+  text-shadow: 1px 1px 1px #333;
+  font-weight: bold; }
+
+.header-title {
+  font-size: 1.6em;
+  text-align: center;
+  display: block;
+  margin: 100px auto 0; }
+
+.header-title div {
+  display: inline;
+  padding: 0 50px;
+  border-bottom: 1px solid #fff5; }
+
+.header-text {
+  font-size: 1em;
+  text-align: center;
+  display: block; }
+
+/******************************[ container ]********************************/
+.content {
+  position: relative;
+  font-size: 14px;
+  top: 280px;
+  padding: 10px 5%;
+  background-color: #444;
+  width: 100%; }
+
+/******************************[ carde ]********************************/
+.card {
+  font-weight: bold;
+  font-size: 1em; }
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .logo {
+    font-size: 0.5em; } }
+/* Small devices (landscape phones, 576px and up) */
+/* Medium devices (tablets, 768px and up) */
+/* Large devices (desktops, 992px and up) */
+/* Extra large devices (large desktops, 1200px and up) */
