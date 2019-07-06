@@ -1,3 +1,25 @@
+a {
+    color: #fff;
+}
+
+a:hover {
+    color: rgb(54, 12, 12);
+}
+
+h5 {
+    text-align: center;
+}
+
+h4 {
+    font-size: 1.2em;
+    text-align: center;
+    display: block;
+}
+
+.maiuscula {
+    text-transform: uppercase;
+}
+
 /*Modifica cor navbar*/
 
 .nav-wrapper>ul>li>a,
@@ -122,10 +144,11 @@ section#jogos {
 
 }
 
-.tabela-geral,
-.tabela-geral>table {
+    .tabela-geral,
+    .tabela-geral>table {
     border: 1px solid #618FBC;
     width: 80%;
+    height: auto;
     margin: 10px 10%;
 }
 
@@ -168,7 +191,7 @@ section#jogos>p {
 #rodada6,
 #rodada7,
 #rodada8 {
-    height: auto;
+    height: 121vh;
 }
 
 #jogos .data-local {
