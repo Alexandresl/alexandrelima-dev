@@ -1,3 +1,5 @@
+@import 'minima/syntax-highlighting';
+
 /******************************[ Geral ]********************************/
 
 @font-face {
@@ -34,6 +36,13 @@ p {
   font-size: 1.2em;
 }
 
+pre {
+  margin-bottom: 20px;
+  border: 1px solid #333;
+  padding: 15px;
+  border-radius: 10px;
+  background: #000000c4;
+}
 /******************************[ Nav ]********************************/
 
 nav {
@@ -130,3 +139,5 @@ header {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {}
+
+

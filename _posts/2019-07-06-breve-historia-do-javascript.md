@@ -9,6 +9,37 @@ categories:
 
 # Início no Netscape
 
+```javascript
+<script type="text/javascript">
+function startTime()
+{
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+// add a zero in front of numbers<10
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+t=setTimeout('startTime()',500);
+
+}
+
+function checkTime(i)
+{
+if (i<10)
+  {
+  i="0" + i;
+  }
+return i;
+}
+</script>
+
+<div id="txt"><script type="text/javascript">document.write(startTime())
+</script>
+</div>
+```
+
 Em 1993, o Centro Nacional de Aplicações de Supercomputação (NCSA), uma unidade da Universidade de Illinois em Urbana-Champaign, lançou o NCSA Mosaic, o primeiro navegador gráfico popular da Web, que desempenhou um papel importante na expansão do crescimento da nascente World Wide Web além do nicho NeXTSTEP onde a World Wide Web havia se formado três anos antes. Em 1994, uma empresa chamada Mosaic Communications foi fundada em Mountain View, na Califórnia, e empregou muitos dos autores originais do NCSA Mosaic para criar o Mosaic Netscape. No entanto, não compartilhou intencionalmente nenhum código com o NCSA Mosaic. O codinome interno do navegador da empresa era Mozilla, uma junção de "Mosaic and Godzilla" . A primeira versão do navegador da Web, Mosaic Netscape 0.9, foi lançada no final de 1994. Em quatro meses, já havia conquistado três quartos do mercado de navegadores e se tornado o principal navegador da Web nos anos 90. Para evitar problemas de propriedade de marca registrada com o NCSA, o navegador foi posteriormente renomeado para Netscape Navigator no mesmo ano, e a empresa assumiu o nome de Netscape Communications. A Netscape Communications percebeu que a Web precisava se tornar mais dinâmica. Marc Andreessen, o fundador da empresa, acreditava que o HTML precisava de uma "linguagem de cola" que fosse fácil de usar por Web designers e programadores de meio período para montar componentes como imagens e plugins, onde o código poderia ser escrito diretamente na Web.
 
 Em 1995, a Netscape Communications recrutou Brendan Eich com o objetivo de incorporar a linguagem de programação Scheme em seu Netscape Navigator. Antes que ele pudesse começar, a Netscape Communications colaborou com a Sun Microsystems para incluir na linguagem de programação mais estática do Netscape Navigator Sun, Java, a fim de competir com a Microsoft pela adoção de tecnologias e plataformas da Web. A Netscape Communications decidiu então que a linguagem de script que eles queriam criar complementaria o Java e deveria ter uma sintaxe semelhante, o que excluía a adoção de outras linguagens como Perl, Python, TCL ou Scheme. Para defender a ideia do JavaScript contra propostas concorrentes, a empresa precisava de um protótipo. Eich escreveu um em 10 dias, em maio de 1995.
