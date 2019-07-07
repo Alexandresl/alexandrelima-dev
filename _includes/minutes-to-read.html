@@ -7,5 +7,5 @@
 {% if words < 360 %}
     {% assign minutesText = '1 minuto para ler' %}
 {% else %}
-    {% assign minutesText = words | | divided_by: 180 | apeend: "Minutos para ler" %}
+    {% assign minutesText = words | divided_by: 180 | append: " minutos para ler" %}
 {% endif %}
