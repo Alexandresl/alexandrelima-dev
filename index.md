@@ -2,12 +2,12 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-layout: page
+layout: home
 title: Home
 permalink: /
 ---
 
-<h1>{{codigos}}</h1>
+<h1>&#123;&#123;Codigos&#125;&#125;</h1>
 <div class="row">
 
 
