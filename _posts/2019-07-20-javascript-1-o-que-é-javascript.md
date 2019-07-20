@@ -37,4 +37,4 @@ O problema é que, quando eles chamaram o Brendan, eles não conheciam realmente
 
 Foi então abandonada a ideia de utilizar o _Scheme_ (como o Brandan chegou a sugerir) no projeto e então criada uma nova linguagem que ainda possuía algumas características do _Scheme_, mas utilizava várias características de outras linguagens também, como o _Java_, o _Self_ e o _Perl_.
 
-![Brendan Eich](/assets/brendaneich.jpg "Brendan Eich - Criador do JavaScript")
+![Brendan Eich](/assets/brendaneich.jpg 100x20 "Brendan Eich - Criador do JavaScript")
