@@ -47,3 +47,4 @@ A Microsoft porém, não ficou muito tempo para trás. Logo lançou uma versão 
 
 Foi então em 1997 que a Netscape procura a ECMA Internacional a fim de padronizar a linguagem JavaScript, nascendo assim o ECMAScript, que é hoje o nome oficial da linguagem.
 
+
