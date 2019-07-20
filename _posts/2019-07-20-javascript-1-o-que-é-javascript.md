@@ -29,12 +29,12 @@ O javaScript foi inspirada em uma linguagem chamada HyperTalk, criada por _Dan W
 
 A plataforma do HyperCard incluía um software e uma plataforma de desenvolvimento. Possuía um banco de dados de arquivo simples. Já a linguagem HyperTalk, inclusa na plataforma, com uma sintaxe simples, permitia que fosse manipulado dados e a interface do usuário. Tudo isso orientado a eventos. Esse conjunto de ferramentas possibilitavam que programadores iniciantes pudessem utilizar a ferramenta em um conjunto enorme projetos diferentes.
 
-![Dan Winkler](/img/danwinkler.jpg "Dan Winkler - Criador do HyperTalk")
+![Dan Winkler](/assets/danwinkler.jpg "Dan Winkler - Criador do HyperTalk")
 
-A Netscape, ao conhecer a tecnologia, teve a ideia de embargar em seu navegador uma linguagem semelhante. para isso, contratou um programador chamado Brendan Eich, que era bastante conhecido pelo seu trabalho em compiladores para uma outra linguagem chamada *Scheme*. 
+A Netscape, ao conhecer a tecnologia, teve a ideia de embargar em seu navegador uma linguagem semelhante. para isso, contratou um programador chamado Brendan Eich, que era bastante conhecido pelo seu trabalho em compiladores para uma outra linguagem chamada _Scheme_. 
 
-O problema é que, quando eles chamaram o Brendan, eles não conheciam realmente esta linguagem *Scheme* e quando vieram a conhecer, descobriam que era o oposto ao que eles queriam, pois possuia uma sintaxe muito mais complexa.
+O problema é que, quando eles chamaram o Brendan, eles não conheciam realmente esta linguagem _Scheme_ e quando vieram a conhecer, descobriam que era o oposto ao que eles queriam, pois possuia uma sintaxe muito mais complexa.
 
-Foi então abandonada a ideia de utilizar o *Scheme* (como o Brandan chegou a sugerir) no projeto e então criada uma nova linguagem que ainda possuía algumas características do *Scheme*, mas utilizava várias características de outras linguagens também, como o *Java*, o *Self* e o *Perl*.
+Foi então abandonada a ideia de utilizar o _Scheme_ (como o Brandan chegou a sugerir) no projeto e então criada uma nova linguagem que ainda possuía algumas características do _Scheme_, mas utilizava várias características de outras linguagens também, como o _Java_, o _Self_ e o _Perl_.
 
-![Brendan Eich](/img/brendaneich.jpg" "Brendan Eich - Criador do JavaScript")
+![Brendan Eich](/assets/brendaneich.jpg "Brendan Eich - Criador do JavaScript")
