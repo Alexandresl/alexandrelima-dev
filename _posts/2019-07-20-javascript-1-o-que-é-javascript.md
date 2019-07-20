@@ -36,3 +36,13 @@ O problema é que, quando eles chamaram o Brendan, eles não conheciam realmente
 Foi então abandonada a ideia de utilizar o _Scheme_ (como o Brandan chegou a sugerir) no projeto e então criada uma nova linguagem que ainda possuía algumas características do _Scheme_, mas utilizava várias características de outras linguagens também, como o _Java_, o _Self_ e o _Perl_.
 
 <img src="/assets/brendaneich.jpg" title="Brendan Eich - Criador do JavaScript" alt="Brendan Eich" width="180">
+
+O primeiro nome desta linguagem criada foi *Mocha* por sugestão de Mark Andreessen, fundador da Netscape. Porém, quando foi oficialmente lançada em versões beta do Netscape Navigator 2.0, em setembro de 1995, foi chamada de LiveScript.
+
+Neste momento, começa um período que ficou conhecido como "Guerra dos browsers", que vai de 1995 até 1999. E é o momento que a Microsoft entra no mercado dos browsers, com o Internet Explorer. O navegador foi disponibilizado gratuitamente para todos os usuários do sistema operacional Windows. o que quebrou a hegemonia da Netscape.
+
+Assim, como estratégia de marketing, a Netscape juntou forças com a Sun Microsystems. Na época, a linguagem de programação Java estava no auge, após seu lançamento em 1992, porém esta linguagem não se adequava aos propósitos da Netscape. Assim, possivelmente, para ganhar um pouco da atenção que Java estava tendo naquele momento, o LiveScript passou a ser chamado de JavaScript.
+
+A Microsoft porém, não ficou muito tempo para trás. Logo lançou uma versão do Internet Explorer com uma linguagem chamada JScript. Que era essencialmente o JavaScript da Netscape, mas que por motivos de propriedade intelectual a microsoft não poderia utilizar.
+
+Foi então em 1997 que a Netscape procura a ECMA Internacional a fim de padronizar a linguagem JavaScript, nascendo assim o ECMAScript.
