@@ -45,4 +45,5 @@ Assim, como estratégia de marketing, a Netscape juntou forças com a Sun Micros
 
 A Microsoft porém, não ficou muito tempo para trás. Logo lançou uma versão do Internet Explorer com uma linguagem chamada JScript. Que era essencialmente o JavaScript da Netscape, mas que por motivos de propriedade intelectual a microsoft não poderia utilizar.
 
-Foi então em 1997 que a Netscape procura a ECMA Internacional a fim de padronizar a linguagem JavaScript, nascendo assim o ECMAScript.
+Foi então em 1997 que a Netscape procura a ECMA Internacional a fim de padronizar a linguagem JavaScript, nascendo assim o ECMAScript, que é hoje o nome oficial da linguagem.
+
