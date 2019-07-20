@@ -48,4 +48,12 @@ A Microsoft porém, não ficou muito tempo para trás. Logo lançou uma versão 
 
 Foi então em 1997 que a Netscape procura a ECMA Internacional a fim de padronizar a linguagem JavaScript, nascendo assim o ECMAScript, que é hoje o nome oficial da linguagem.
 
+#### Principais características
+
+O JavaScript é uma linguagem de script, orientada a objetos baseada em protótipos. Possui tipagem fraca e um conjunto de elementos que formam o núcleo da linguagem, tais como: operadores e estrutura de controle. Possui também bibliotecas padrão de objetos, como o *Array* e *Date*.
+
+O JavaScript é utilizado hoje para uma infinidade de propósitos, seja do lado do cliente ou mesmo no servidor, para criação de aplicativos mobile ou para PWA (Progressive Web Apps), entre outras muitas aplicações.
+
+Todas estas características serão ainda comentadas em posts futuros, então se você quer realmente conhecer o JavaScript, basta seguir acompanhando o blog.
+
 
