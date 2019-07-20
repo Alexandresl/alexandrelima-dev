@@ -5,6 +5,7 @@ date: 2019-07-20T18:27:31.914Z
 category: Javascript
 tags: 'Javascript, Programação, Introdução'
 ---
+
 Bem-vindo(a)!
 
 Este será o primeiro de uma série de posts onde pretendo abordar uma grande quantidade de assuntos a respeito do JavaScript. Desde o contexto histórico em que a linguagem nasceu; passando pela sintaxe e conceitos básicos da linguagem, até chegarmos nas últimas features e frameworks da linguagem. o intuito é fornecer um material para você aprender e muito mais importante, gostar de JavaScript.
