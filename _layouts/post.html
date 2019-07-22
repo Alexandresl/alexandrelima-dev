@@ -3,6 +3,7 @@ layout: default
 comments: true
 # other options
 ---
+
 {% include minutes-to-read.html %}
 <h1>{{ page.title }}</h1>
 <span>{{page.date | date_to_string}} |  {{ minutesText }} </span>
@@ -13,10 +14,12 @@ comments: true
 
 <br>
 
-{% if page.comments %}
+
 
 <div id="disqus_thread"></div>
+
 <script>
+
 /**
 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
@@ -34,6 +37,5 @@ s.setAttribute('data-timestamp', +new Date());
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
-{% endif %}
 
 <script id="dsq-count-scr" src="//alexandrelima.disqus.com/count.js" async></script>
