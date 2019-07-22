@@ -5,8 +5,6 @@ date: 2019-07-20T18:27:31.914Z
 category: Javascript
 tags: 'Javascript, Programação, Introdução'
 ---
-
-
 Bem-vindo(a)!
 
 Este será o primeiro de uma série de posts onde pretendo abordar uma grande quantidade de assuntos a respeito do JavaScript. Desde o contexto histórico em que a linguagem nasceu; passando pela sintaxe e conceitos básicos da linguagem, até chegarmos nas últimas features e frameworks da linguagem. o intuito é fornecer um material para você aprender e muito mais importante, gostar de JavaScript.
@@ -28,7 +26,7 @@ Além disso, o JavaScript é a linguagem da Web e a web, hoje, está presente em
 O javaScript foi inspirada em uma linguagem chamada HyperTalk, criada por _Dan Winkler_ em 1987 e utilizada nos computadores da Apple em uma plataforma chamada de HyperCard. 
 A plataforma do HyperCard incluía um software e uma plataforma de desenvolvimento. Possuía um banco de dados de arquivo simples. Já a linguagem HyperTalk, inclusa na plataforma, com uma sintaxe simples, permitia que fosse manipulado dados e a interface do usuário. Tudo isso orientado a eventos. Esse conjunto de ferramentas possibilitavam que programadores iniciantes pudessem utilizar a ferramenta em um conjunto enorme projetos diferentes.
 
-<img src="/assets/danwinkler.jpg" title="Dan Winkler - Criador do HyperTalk" alt="Dan Winkler" width="180">
+<img src="/assets/images/danwinkler.jpg" title="Dan Winkler - Criador do HyperTalk" alt="Dan Winkler" width="180">
 
 A Netscape, ao conhecer a tecnologia, teve a ideia de embargar em seu navegador uma linguagem semelhante. para isso, contratou um programador chamado Brendan Eich, que era bastante conhecido pelo seu trabalho em compiladores para uma outra linguagem chamada _Scheme_. 
 
@@ -36,9 +34,9 @@ O problema é que, quando eles chamaram o Brendan, eles não conheciam realmente
 
 Foi então abandonada a ideia de utilizar o _Scheme_ (como o Brandan chegou a sugerir) no projeto e então criada uma nova linguagem que ainda possuía algumas características do _Scheme_, mas utilizava várias características de outras linguagens também, como o _Java_, o _Self_ e o _Perl_.
 
-<img src="/assets/brendaneich.jpg" title="Brendan Eich - Criador do JavaScript" alt="Brendan Eich" width="180">
+<img src="/assets/images/brendaneich.jpg" title="Brendan Eich - Criador do JavaScript" alt="Brendan Eich" width="180">
 
-O primeiro nome desta linguagem criada foi *Mocha* por sugestão de Mark Andreessen, fundador da Netscape. Porém, quando foi oficialmente lançada em versões beta do Netscape Navigator 2.0, em setembro de 1995, foi chamada de LiveScript.
+O primeiro nome desta linguagem criada foi _Mocha_ por sugestão de Mark Andreessen, fundador da Netscape. Porém, quando foi oficialmente lançada em versões beta do Netscape Navigator 2.0, em setembro de 1995, foi chamada de LiveScript.
 
 Neste momento, começa um período que ficou conhecido como "Guerra dos browsers", que vai de 1995 até 1999. E é o momento que a Microsoft entra no mercado dos browsers, com o Internet Explorer. O navegador foi disponibilizado gratuitamente para todos os usuários do sistema operacional Windows. o que quebrou a hegemonia da Netscape.
 
@@ -50,10 +48,8 @@ Foi então em 1997 que a Netscape procura a ECMA Internacional a fim de padroniz
 
 #### Principais características
 
-O JavaScript é uma linguagem de script, orientada a objetos baseada em protótipos. Possui tipagem fraca e um conjunto de elementos que formam o núcleo da linguagem, tais como: operadores e estrutura de controle. Possui também bibliotecas padrão de objetos, como o *Array* e *Date*.
+O JavaScript é uma linguagem de script, orientada a objetos baseada em protótipos. Possui tipagem fraca e um conjunto de elementos que formam o núcleo da linguagem, tais como: operadores e estrutura de controle. Possui também bibliotecas padrão de objetos, como o _Array_ e _Date_.
 
 O JavaScript é utilizado hoje para uma infinidade de propósitos, seja do lado do cliente ou mesmo no servidor, para criação de aplicativos mobile ou para PWA (Progressive Web Apps), entre outras muitas aplicações.
 
 Todas estas características serão ainda comentadas em posts futuros, então se você quer realmente conhecer o JavaScript, basta seguir acompanhando o blog.
-
-
