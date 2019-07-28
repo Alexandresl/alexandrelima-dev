@@ -32,4 +32,4 @@ Estes softwares possuem inúmeros recursos que nos ajudam ao escrever o código.
 
 #### Browser
 
-Por fim, precisamos ter um navegador para testarmos nosso código. Neste quesito, acho importante que você possua pelo mínimo dois instalados, entre eles o Google Chrome ou o Mozilla Firefox, que normalmente possuem as atualizações mais frequentes e assim conseguem disponibilizar os recursos mais recentes da linguagem.
+Por fim, precisamos ter um navegador para testarmos nosso código. Neste quesito, acho importante que você possua pelo mínimo dois instalados, entre eles o Google Chrome ou o Mozilla Firefox, que normalmente possuem as atualizações mais frequentes e em consequência, conseguem disponibilizar mais rapidamente novos recursos da linguagem.
