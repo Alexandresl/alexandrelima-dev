@@ -1,39 +1,62 @@
-  <div class="navbar-fixed">
+<div class="navbar-fixed">
     <nav>
-      <div class="nav-wrapper">
-        <a href="/" class="brand-logo">
-          <span class="logo logoP1">alexandreLima</span>
-          <span class="logo">.</span>
-          <span class="logo logoP2">dev()</span>
+        <a href="#">
+            <img class="myPhoto" src="../assets/img/main.jpg" alt="Alexandre Lima - Desenvolvedor Web"
+                title="Alexandre Lima - Desenvolvedor Web">
         </a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          {% for page in site.pages %}
-          
-          <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-          
-          {% endfor %}
-          <!-- <li><a href="">Home</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Portfólio</a></li>
-          <li><a href="">Sobre</a></li> -->
-        </ul>
-      </div>
+        <div class="logo">
+            <a href="">
+                <div class="top">
+                    <div class="logo-red">alexandreLima</div>
+                    <div class="logo-dot">.</div>
+                    <div class="logo-blue">dev()</div>
+                </div>
+            </a>
+            <span class="logo-dev">Desenvolvedor Web</span>
+        </div>
+        <div class="nav-wrapper">
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+            </a>
+        </div>
     </nav>
-  </div>
-  <ul class="sidenav" id="mobile-demo">
-    {% for page in site.pages %}
-      {% if page.title != undefined %}
-        <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-      {% endif %}
-    {% endfor %}
-  </ul>
+</div>
+<div class="left-navbar">
+    <img src="../assets/img/main.jpg" class="my-big-photo" alt="Alexandre Lima - Desenvolvedor Web"
+        title="Alexandre Lima - Desenvolvedor Web">
+    <div class="logo">
+        <a href="">
+            <div class="top">
+                <div class="logo-part logo-red">alexandreLima</div>
+                <div class="logo-part logo-dot">.</div>
+                <div class="logo-part logo-blue">dev()</div>
+            </div>
+        </a>
+        <span class="logo-dev">Desenvolvedor Web</span>
+    </div>
+    <div class="icon-redes">
+        <a href="" class="redes-sociais-icons"><img src="../assets/img/youtube-brands.png" alt="Youtube icon"
+                title="Youtube icon"></a>
+        <a href="" class="redes-sociais-icons"><img src="../assets/img/twitter-brands.png" alt="twitter icon"
+                title="twitter icon"></a>
+        <a href="" class="redes-sociais-icons"><img src="../assets/img/github-brands.png" alt="github icon"
+                title="github icon"></a>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="/">home</a></li>
+            <li><a href="/sobre/">sobre</a></li>
+            <li><a href="/portfolio/">portfólio</a></li>
+            <li><a href="/contato/">contato</a></li>
+        </ul>s
+    </div>
 
-  <header class="header-paralax">
-    <span class="header-title">
-      <div>Alexandre Lima</div>
-    </span>
-    <span class="header-text">
-      <div>Desenvolvedor Web</div>
-    </span>
-  </header>
+</div>
+<ul class="sidenav" id="mobile-demo">
+    <ul>
+        <li><a href="/">home</a></li>
+        <li><a href="/sobre/">sobre</a></li>
+        <li><a href="/portfolio/">portfólio</a></li>
+        <li><a href="/contato/">contato</a></li>
+    </ul>
+</ul>
