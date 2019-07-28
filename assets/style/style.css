@@ -136,6 +136,7 @@ figure.highlight {
     section {
         font-family: 'Roboto', sans-serif;
         color: #fff;
+        font-size: 1.2px;
     }
 
     section.post h1, section.page h1 {
