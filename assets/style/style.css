@@ -17,6 +17,10 @@ body {
     background-color: #3B3C40;
 }
 
+p {
+    margin-bottom: 5px;
+}
+
 .logo-part {
     margin: 0 1px;
 }
