@@ -16,7 +16,7 @@ Então vamos às ferramentas!
 
 #### Node.js
 
-O Node.js está disponível para todos os sistemas operacionais. Basta acessar <https://nodejs.org/en/> e o site indicará as principais opções de download para o seu sistema operacional. Normalmente temos duas versões: a LTS (Long Term Support), versão com o prazo estendido de suporte e a Current Version, ou seja, a versão mais recente. Para termos uma versão mais estável, convém optarmos por instalar a LTS, que no momento em que estou escrevendo é a 10.16.0.
+O Node.js está disponível para todos os sistemas operacionais. Basta acessar <a href="https://nodejs.org/en/" target="__blank">https://nodejs.org/en/</a> e o site indicará as principais opções de download para o seu sistema operacional. Normalmente temos duas versões: a LTS (Long Term Support), versão com o prazo estendido de suporte e a Current Version, ou seja, a versão mais recente. Para termos uma versão mais estável, convém optarmos por instalar a LTS, que no momento em que estou escrevendo é a 10.16.0.
 
 A instalação é simples para todos os sistemas operacionais, normalmente bastando que sigamos o "Wizard" de instalação.
 
