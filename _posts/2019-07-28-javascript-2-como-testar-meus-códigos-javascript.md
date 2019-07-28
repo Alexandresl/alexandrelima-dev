@@ -24,7 +24,7 @@ Para testar se a instalação foi realizada com sucesso basta digitar no termina
 
 #### Editor de texto
 
-Para escrever seus códigos você precisara de um editor de texto, específico para programação. Atualmente, existe uma quantidade enorme de softwares excelentes, porém gostaria de deixar como recomendação o [Visual Studio Code](https://code.visualstudio.com/) e o [Sublime Text](https://www.sublimetext.com/).
+Para escrever seus códigos você precisara de um editor de texto, específico para programação. Atualmente, existe uma quantidade enorme de softwares excelentes, porém gostaria de deixar como recomendação o <a href="" target="__blank">Visual Studio Code</a> e o <a href="https://www.sublimetext.com/" target="__blank">Sublime Text</a>.
 
 Ambos os editores estão disponíveis para todas as plataformas bastando realizar o download.
 
