@@ -28,8 +28,11 @@ Para escrever seus códigos você precisara de um editor de texto, específico p
 
 Ambos os editores estão disponíveis para todas as plataformas bastando realizar o download.
 
-Estes softwares possuem inúmeros recursos que nos ajudam ao escrever o código. Foge do escopo abordarmos os recursos e plugins disponíveis, porém você poderá encontrar um grande conjunto de material na internet, independente de qual dos softwares você utilize.
+Após a instalação do VSCode, você deverá instalar um plugin chamado *Code Runner*. Com ele poderemos testar os scripts diretamente no VSCode utilizando o atalho **Ctrl + Alt + N** ou no próprio terminal do editor utilizando o comando *node nomedoarquivo.js*. Por trás dos panos, ele irá utilizar o Node.js para executar o script.
+
+Estes softwares possuem outros inúmeros recursos que nos ajudam ao escrever o código. Foge do escopo abordarmos os recursos e plugins disponíveis, porém você poderá encontrar um grande conjunto de material na internet, independente de qual dos softwares você utilize.
 
 #### Browser
 
 Por fim, precisamos ter um navegador para testarmos nosso código. Neste quesito, acho importante que você possua pelo mínimo dois instalados, entre eles o Google Chrome ou o Mozilla Firefox, que normalmente possuem as atualizações mais frequentes e em consequência, conseguem disponibilizar mais rapidamente novos recursos da linguagem.
+
