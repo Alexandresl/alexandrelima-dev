@@ -76,4 +76,4 @@ No bloco acima, eu tenho duas sentenças de código e dois blocos de códigos.
 
 Assim, podemos, de forma básica, definir que o JavaScript é composto por sentenças de código que podem ou não terminar com ponto e vírgula e por blocos de código que são delimitados por chaves.
 
-### Executando *JavaScript*
+#### Executando *JavaScript*
