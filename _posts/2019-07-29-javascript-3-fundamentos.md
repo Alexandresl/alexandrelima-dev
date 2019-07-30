@@ -50,3 +50,16 @@ Por exemplo. A seguir temos uma sentença de código *JavaScript*:
 ```javascript
     console.log("Sentença de código")
 ```
+
+Podemos ter também um bloco de código, que são delimitados por chaves, e que poderão conter várias sentenças de código ou mesmo outros blocos de código, conforme exemplo abaixo:
+
+```javascript
+{
+    {
+        console.log("Olá ") // 1ª sentença
+        console.log(
+            'Mundo!'
+        ) // 2ª sentença
+    } // bloco de código interno a outro bloco
+} // bloco de código
+```
