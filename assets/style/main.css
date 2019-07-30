@@ -56,7 +56,7 @@
   .sx    { color: #d14 } 
   .sr    { color: #009926 } 
   .s1    { color: #d14 } 
-  .ss    { color: #990073 } 
+  .ss    { color: #990073 }
   .bp    { color: #999 } 
   .vc    { color: #008080 } 
   .vg    { color: #008080 } 
@@ -64,8 +64,8 @@
   .il    { color: #099 }  */
 
   .highlight .hll { background-color: #222222 }
-  .highlight  { background: #222222; color: #cccccc; padding: 5px; border-radius: 5px; margin-bottom: 10px; }
-  .highlight .c { color: #000080 } /* Comment */
+  .highlight  { background: #222222; color: #cccccc; padding: 5px; border-radius: 5px; margin-bottom:  }
+  .highlight .c { color: #666699 } /* Comment */
   .highlight .err { color: #cccccc; border: 1px solid #FF0000 } /* Error */
   .highlight .esc { color: #cccccc } /* Escape */
   .highlight .g { color: #cccccc } /* Generic */
@@ -75,19 +75,19 @@
   .highlight .o { color: #3399cc } /* Operator */
   .highlight .x { color: #cccccc } /* Other */
   .highlight .p { color: #cccccc } /* Punctuation */
-  .highlight .ch { color: #000080 } /* Comment.Hashbang */
-  .highlight .cm { color: #000080 } /* Comment.Multiline */
-  .highlight .cp { color: #000080 } /* Comment.Preproc */
-  .highlight .cpf { color: #000080 } /* Comment.PreprocFile */
-  .highlight .c1 { color: #000080 } /* Comment.Single */
+  .highlight .ch { color: #666699 } /* Comment.Hashbang */
+  .highlight .cm { color: #666699 } /* Comment.Multiline */
+  .highlight .cp { color: #666699 } /* Comment.Preproc */
+  .highlight .cpf { color: #666699 } /* Comment.PreprocFile */
+  .highlight .c1 { color: #666699 } /* Comment.Single */
   .highlight .cs { color: #cd0000; font-weight: bold } /* Comment.Special */
   .highlight .gd { color: #cd0000 } /* Generic.Deleted */
   .highlight .ge { color: #cccccc; font-style: italic } /* Generic.Emph */
   .highlight .gr { color: #FF0000 } /* Generic.Error */
-  .highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+  .highlight .gh { color: #666699; font-weight: bold } /* Generic.Heading */
   .highlight .gi { color: #00cd00 } /* Generic.Inserted */
   .highlight .go { color: #888888 } /* Generic.Output */
-  .highlight .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+  .highlight .gp { color: #666699; font-weight: bold } /* Generic.Prompt */
   .highlight .gs { color: #cccccc; font-weight: bold } /* Generic.Strong */
   .highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
   .highlight .gt { color: #0044DD } /* Generic.Traceback */
