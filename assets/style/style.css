@@ -71,6 +71,7 @@ figure.highlight {
     }
 
     nav {
+        display: flex;
         background-color: #252526;
         border-bottom: 1px solid #707070;
         height: 68px;
@@ -84,6 +85,7 @@ figure.highlight {
         height: 40px;
         margin: 14px;
         border-radius: 100%;
+        justify-content: left;
     }
 
     .top {
@@ -109,9 +111,9 @@ figure.highlight {
 
     .nav-wrapper {
         height: 68px;
-        width: 100%;
+        width: auto;
+        background: #707070;
         text-align: right;
-        display: grid;
     }
 
     .nav-wrapper a i {
