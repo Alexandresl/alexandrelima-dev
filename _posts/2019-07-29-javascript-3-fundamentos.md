@@ -37,6 +37,12 @@ Outro conceito importante é o de variáveis e constantes. Assim, se quisermos g
 
 Iremos utilizar os dados também para realizar operações. Estas poderão ser de atribuição, aritmética, relacional ou lógica. Poderemos realizar operações com estruturas de dados também. Por exemplo, unificando duas listas de dados.
 
+#### Estrutura do curso
+
+Nosso curso será estruturado com uma pasta para cada capítulo e um arquivo *JavaScript* por aula. Em alguns exemplos mais complexos, poderemos criar vários arquivos e algumas subpastas, mas, em geral, esta será a estrutura.
+
+Assim, vamos criar uma pasta chamada fundamentos, e posteriormente colocar os arquivos desta unidade.
+
 #### Organização básica de um código JavaScript
 
 Uma das primeiras perguntas que eu faço ao aprender uma nova linguagem de programação é, como ela é, da forma mais básica. Assim, depois poderemos nos preocupar com como é estruturada uma aplicação completa, que muitas vezes poderá ter várias respostas, dependendo do programador que é questionado.
@@ -46,6 +52,8 @@ O *JavaScript* é uma linguagem derivada da linguagem **C**. Do ponto de vista d
 Devemos ter claro que uma sentença não é necessariamente uma linha de código. Assim como no português, uma sentença termina com um ponto e não necessariamente está contida em apenas uma linha, a sentença no *JavaScript* também pode ocupar uma ou mais linhas de código.
 
 Por exemplo. A seguir temos uma sentença de código *JavaScript*:
+
+Vamos criar o arquivo organizacao.js e salva-la na pasta fundamentos
 
 ```javascript
     console.log("Sentença de código")
@@ -63,3 +71,9 @@ Podemos ter também um bloco de código, que são delimitados por chaves, e que 
     } // bloco de código interno a outro bloco
 } // bloco de código
 ```
+
+No bloco acima, eu tenho duas sentenças de código e dois blocos de códigos.
+
+Assim, podemos, de forma básica, definir que o JavaScript é composto por sentenças de código que podem ou não terminar com ponto e vírgula e por blocos de código que são delimitados por chaves.
+
+### Executando *JavaScript*
