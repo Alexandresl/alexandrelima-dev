@@ -59,6 +59,7 @@ Vamos criar o arquivo organizacao.js e salva-la na pasta fundamentos
     console.log("Sentença de código")
 ```
 
+
 Podemos ter também um bloco de código, que são delimitados por chaves, e que poderão conter várias sentenças de código ou mesmo outros blocos de código, conforme exemplo abaixo:
 
 ```javascript
