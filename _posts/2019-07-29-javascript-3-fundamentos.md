@@ -37,3 +37,16 @@ Outro conceito importante é o de variáveis e constantes. Assim, se quisermos g
 
 Iremos utilizar os dados também para realizar operações. Estas poderão ser de atribuição, aritmética, relacional ou lógica. Poderemos realizar operações com estruturas de dados também. Por exemplo, unificando duas listas de dados.
 
+#### Organização básica de um código JavaScript
+
+Uma das primeiras perguntas que eu faço ao aprender uma nova linguagem de programação é, como ela é, da forma mais básica. Assim, depois poderemos nos preocupar com como é estruturada uma aplicação completa, que muitas vezes poderá ter várias respostas, dependendo do programador que é questionado.
+
+O *JavaScript* é uma linguagem derivada da linguagem **C**. Do ponto de vista de organização básica, ela é organizada em blocos de código, que são agrupamentos de sentenças de código.
+
+Devemos ter claro que uma sentença não é necessariamente uma linha de código. Assim como no português, uma sentença termina com um ponto e não necessariamente está contida em apenas uma linha, a sentença no *JavaScript* também pode ocupar uma ou mais linhas de código.
+
+Por exemplo. A seguir temos uma sentença de código *JavaScript*:
+
+```javascript
+    console.log("Sentença de código")
+```
