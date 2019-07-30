@@ -64,7 +64,7 @@
   .il    { color: #099 }  */
 
   .highlight .hll { background-color: #222222 }
-  .highlight  { background: #000000; color: #cccccc }
+  .highlight  { background: #222222; color: #cccccc; padding: 5px; border-radius: 5px; }
   .highlight .c { color: #000080 } /* Comment */
   .highlight .err { color: #cccccc; border: 1px solid #FF0000 } /* Error */
   .highlight .esc { color: #cccccc } /* Escape */
