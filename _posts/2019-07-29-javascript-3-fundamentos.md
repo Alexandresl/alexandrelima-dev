@@ -78,3 +78,13 @@ No bloco acima, eu tenho duas sentenças de código e dois blocos de códigos.
 Assim, podemos, de forma básica, definir que o JavaScript é composto por sentenças de código que podem ou não terminar com ponto e vírgula e por blocos de código que são delimitados por chaves.
 
 #### Executando *JavaScript*
+
+Vamos conhecer algumas formas de executar o *JavaScript*. Você pode utilizar ferramentas online, o console do browser, o Node.js, ou mesmo os editores de códigos como o Sublime, Atom e o VSCode, possuem terminais internos para execução do código (em conjunto com o node).
+
+Como alternativas online temos: <https://repl.it/languages/nodejs> e o <https://jsfiddle.net/>.
+
+Para utilizar o console do Chrome, basta digitar *Ctrl + Shift _ i* ou para Mac *Command + '. Também é possível a utilização do plugin *Code Runner* que irá executar o código com o comando *Ctrl + Alt + n* no Windows e "Command + Alt + n" no Mac.
+
+Podemos também utilizando o comando *node nomedoarquivo.js* executar no próprio terminal do sistema operacional.
+
+
