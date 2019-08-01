@@ -81,7 +81,7 @@ Assim, podemos, de forma básica, definir que o JavaScript é composto por sente
 
 Vamos conhecer algumas formas de executar o *JavaScript*. Você pode utilizar ferramentas online, o console do browser, o Node.js, ou mesmo os editores de códigos como o Sublime, Atom e o VSCode, possuem terminais internos para execução do código (em conjunto com o node).
 
-Como alternativas online temos: <https://repl.it/languages/nodejs> e o <https://jsfiddle.net/>.
+Como alternativas online temos: <a href="https://repl.it/languages/nodejs" target="__blank" rel=”noopener noreferrer”> e o <a href="https://jsfiddle.net/" target="__blank" rel=”noopener noreferrer”>.
 
 Para utilizar o console do Chrome, basta digitar *Ctrl + Shift _ i* ou para Mac *Command + '. Também é possível a utilização do plugin *Code Runner* que irá executar o código com o comando *Ctrl + Alt + n* no Windows e "Command + Alt + n" no Mac.
 
