@@ -81,6 +81,10 @@ Vamos conhecer algumas formas de executar o _JavaScript_. Você pode utilizar fe
 
 Como alternativas online temos: <a href="https://repl.it/languages/nodejs" target="_blank" rel=”noopener”>https://repl.it/languages/nodejs</a> e o <a href="https://jsfiddle.net/" target="_blank" rel=”noopener>https://jsfiddle.net/</a>.
 
+
+
+<a href="http://example.com/" target="_blank">example</a>
+
 Para utilizar o console do Chrome, basta digitar _Ctrl + Shift_  i _ou para Mac _Command + '. Também é possível a utilização do plugin_ Code Runner _que irá executar o código com o comando_ Ctrl + Alt + n* no Windows e "Command + Alt + n" no Mac.
 
 Podemos também utilizando o comando _node nomedoarquivo.js_ executar no próprio terminal do sistema operacional.
