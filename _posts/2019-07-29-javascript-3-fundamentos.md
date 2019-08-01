@@ -75,7 +75,7 @@ No bloco acima, eu tenho duas sentenças de código e dois blocos de códigos.
 
 Assim, podemos, de forma básica, definir que o JavaScript é composto por sentenças de código que podem ou não terminar com ponto e vírgula e por blocos de código que são delimitados por chaves.
 
-#### Executando _JavaScript_
+#### Executando JavaScript
 
 Vamos conhecer algumas formas de executar o _JavaScript_. Você pode utilizar ferramentas online, o console do browser, o Node.js, ou mesmo os editores de códigos como o Sublime, Atom e o VSCode, possuem terminais internos para execução do código (em conjunto com o node).
 
