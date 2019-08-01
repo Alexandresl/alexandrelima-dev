@@ -6,7 +6,6 @@ date: 2019-07-29T03:50:32.304Z
 category: JavaScript
 tags: 'Javascript, Programação, Introdução'
 ---
-
 #### Visão geral do algoritmo
 
 O conceito de algoritmo é importante independente da linguagem de programação que se pretenda usar. Além disso, temos a estrutura de dados, que junto com o algoritmo, formam o fundamento para qualquer linguagem.
@@ -17,7 +16,7 @@ Um algoritmo é uma sequência de passos. Podemos imaginar os passos para se des
 
 No algoritmo, você também poderá repetir uma sequência de passos até que uma condição seja satisfeita ou mesmo uma quantidade de vezes pré-definidas. Digamos que você tenha uma pilha de documentos para assinar, você pegará um documento e assinará, pegará um segundo documento e realizará a mesma ação, até que não haja mais documentos a ser assinado.
 
-O algoritmo também permite que você tome decisão. Assim, eu tenho um passo *A* que só será executado caso uma condição seja satisfeita, ou mesmo, poderá ser executado um passo *B*, casso a condição *A* não tenha sido satisfeita.
+O algoritmo também permite que você tome decisão. Assim, eu tenho um passo _A_ que só será executado caso uma condição seja satisfeita, ou mesmo, poderá ser executado um passo _B_, casso a condição _A_ não tenha sido satisfeita.
 
 É importante notarmos que além de ter uma sequência de passos definidas, para que o algoritmo seja correto e otimizado, é importante que os passos estejam na sequência correta. Por exemplo, se assarmos um bolo e depois misturarmos o fermento, acabaremos por não obter o resultado esperado, assim como em inúmeras outras situações.
 
@@ -39,7 +38,7 @@ Iremos utilizar os dados também para realizar operações. Estas poderão ser d
 
 #### Estrutura do curso
 
-Nosso curso será estruturado com uma pasta para cada capítulo e um arquivo *JavaScript* por aula. Em alguns exemplos mais complexos, poderemos criar vários arquivos e algumas subpastas, mas, em geral, esta será a estrutura.
+Nosso curso será estruturado com uma pasta para cada capítulo e um arquivo _JavaScript_ por aula. Em alguns exemplos mais complexos, poderemos criar vários arquivos e algumas subpastas, mas, em geral, esta será a estrutura.
 
 Assim, vamos criar uma pasta chamada fundamentos, e posteriormente colocar os arquivos desta unidade.
 
@@ -47,18 +46,17 @@ Assim, vamos criar uma pasta chamada fundamentos, e posteriormente colocar os ar
 
 Uma das primeiras perguntas que eu faço ao aprender uma nova linguagem de programação é, como ela é, da forma mais básica. Assim, depois poderemos nos preocupar com como é estruturada uma aplicação completa, que muitas vezes poderá ter várias respostas, dependendo do programador que é questionado.
 
-O *JavaScript* é uma linguagem derivada da linguagem **C**. Do ponto de vista de organização básica, ela é organizada em blocos de código, que são agrupamentos de sentenças de código.
+O _JavaScript_ é uma linguagem derivada da linguagem **C**. Do ponto de vista de organização básica, ela é organizada em blocos de código, que são agrupamentos de sentenças de código.
 
-Devemos ter claro que uma sentença não é necessariamente uma linha de código. Assim como no português, uma sentença termina com um ponto e não necessariamente está contida em apenas uma linha, a sentença no *JavaScript* também pode ocupar uma ou mais linhas de código.
+Devemos ter claro que uma sentença não é necessariamente uma linha de código. Assim como no português, uma sentença termina com um ponto e não necessariamente está contida em apenas uma linha, a sentença no _JavaScript_ também pode ocupar uma ou mais linhas de código.
 
-Por exemplo. A seguir temos uma sentença de código *JavaScript*:
+Por exemplo. A seguir temos uma sentença de código _JavaScript_:
 
 Vamos criar o arquivo organizacao.js e salva-la na pasta fundamentos
 
 ```javascript
     console.log("Sentença de código")
 ```
-
 
 Podemos ter também um bloco de código, que são delimitados por chaves, e que poderão conter várias sentenças de código ou mesmo outros blocos de código, conforme exemplo abaixo:
 
@@ -77,14 +75,12 @@ No bloco acima, eu tenho duas sentenças de código e dois blocos de códigos.
 
 Assim, podemos, de forma básica, definir que o JavaScript é composto por sentenças de código que podem ou não terminar com ponto e vírgula e por blocos de código que são delimitados por chaves.
 
-#### Executando *JavaScript*
+#### Executando _JavaScript_
 
-Vamos conhecer algumas formas de executar o *JavaScript*. Você pode utilizar ferramentas online, o console do browser, o Node.js, ou mesmo os editores de códigos como o Sublime, Atom e o VSCode, possuem terminais internos para execução do código (em conjunto com o node).
+Vamos conhecer algumas formas de executar o _JavaScript_. Você pode utilizar ferramentas online, o console do browser, o Node.js, ou mesmo os editores de códigos como o Sublime, Atom e o VSCode, possuem terminais internos para execução do código (em conjunto com o node).
 
-Como alternativas online temos: <a href="https://repl.it/languages/nodejs" target="__blank" rel=”noopener noreferrer”> e o <a href="https://jsfiddle.net/" target="__blank" rel=”noopener noreferrer”>.
+Como alternativas online temos: <a href="https://repl.it/languages/nodejs" target="_blank" rel=”noopener noreferrer”> e o <a href="https://jsfiddle.net/" target="_blank" rel=”noopener noreferrer”>.
 
-Para utilizar o console do Chrome, basta digitar *Ctrl + Shift _ i* ou para Mac *Command + '. Também é possível a utilização do plugin *Code Runner* que irá executar o código com o comando *Ctrl + Alt + n* no Windows e "Command + Alt + n" no Mac.
+Para utilizar o console do Chrome, basta digitar _Ctrl + Shift_  i _ou para Mac _Command + '. Também é possível a utilização do plugin_ Code Runner _que irá executar o código com o comando_ Ctrl + Alt + n* no Windows e "Command + Alt + n" no Mac.
 
-Podemos também utilizando o comando *node nomedoarquivo.js* executar no próprio terminal do sistema operacional.
-
-
+Podemos também utilizando o comando _node nomedoarquivo.js_ executar no próprio terminal do sistema operacional.
