@@ -84,3 +84,28 @@ Como alternativas online temos: <a href="https://repl.it/languages/nodejs" targe
 Para utilizar o console do Chrome, basta digitar _Ctrl + Shift_  i _ou para Mac _Command + '. Também é possível a utilização do plugin_ Code Runner _que irá executar o código com o comando_ Ctrl + Alt + n* no Windows e "Command + Alt + n" no Mac.
 
 Podemos também utilizando o comando _node nomedoarquivo.js_ executar no próprio terminal do sistema operacional.
+
+#### Comentários de código
+
+Os comentários em JavaScript são os mesmos da linguagem *C* e *Java* (apesar de java possuir um a mais). Os comentários são importantes para explicar partes do código ou por que o código executa determinada função. 
+Segue abaixo a sintaxe dos comentários em *JavaScript*:
+
+```javascript
+// Comentários de uma linha
+console.log("linha 1")
+
+/*
+    Comentário de 
+    múltiplas linhas
+*/
+console.log("linha 2")
+
+/**
+ * Outra forma
+ * de criar 
+ * comentários de
+ * múltiplas linhas
+ */
+console.log("linha 3")
+```
+
