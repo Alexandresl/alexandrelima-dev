@@ -273,3 +273,7 @@ console.log(typeof Number)
 No exemplo acima, embora as constantes *1.0* e *2.0* tenham o ponto, elas são consideradas um number do tipo inteiro. Isso pode ser verificado utilizando a função *Number.isInteger()*.
 
 Vimos, também, como realizar alguns cálculos simples utilizando estas constantes. Como definirmos o número de casas decimais a ser exibido em um número de ponto flutuante ou mesmo como realizar a conversão de um número em outros sistemas numéricos, como o binário, octal ou hexadecimal.
+
+Por fim, vimos a diferença entre o tipo de dado number, que pode ser tanto um inteiro quanto um número de ponto flutuante e a função *Number*.
+
+
