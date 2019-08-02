@@ -115,3 +115,7 @@ Todos os comentários acima são ignorados na hora da execução do programa.
 É importante salientar, que os comentários deverão ser adotados de forma consciente. Evitando comentar coisas óbvias do código. Nestes casos, é fundamental que o código seja suficientemente legível no que refere-se a nome de variáveis, nome de funções a termos que criar um comentários para explicar.
 
 Neste serie de posts, contudo, abriremos uma exceção, e para fim didático, utilizaremos bastante comentários. mesmos os óbvios 😉.
+
+#### O básico de var, Let e Const
+
+
