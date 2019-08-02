@@ -126,6 +126,8 @@ Aqui vamos aprender como criar variáveis e constantes em javascript. Nesta aula
 
 Historicamente, no *JavaScript*, sempre se utilizou a palavra *var* para criar variáveis. Recentemente, com ECMAScript 2015, foram introduzidas as palavras *let* e *const*, que iremos detalhar futuramente.
 
+Vamos criar o arquivo variaveisEConstantes.js e salva-la na pasta fundamentos:
+
 ```javascript
 /**
  * var - palavra reservada que usamos
@@ -162,3 +164,32 @@ console.log(c)
 Após declararmos uma variável, nós não precisamos utilizar as palavras reservadas *var* ou *let* novamente. Podemos apenas utilizar a variável lendo ou gravando novos valores nela. Apesar disso, no exemplo é redefinido o valor da variável *a* utilizando o *var*. Por mais estranho que possa parecer, não irá gerar um erro. Já no caso do *let*, caso tentássemos redeclará-lo, o interpretador acusaria um erro de sintaxe.
 
 No exemplo, vimos que o *const* também serve para armazenas valores, só que neste caso, nós não podemos alterá-lo. É sempre aconselhável que quando formos declarar valores que não vão ser alterados durante a execução do programa, utilizemos o *const* ao invés do *let*.
+
+#### Tipagem fraca
+
+Quando uma nova linguagem é desenvolvida, uma das decisões fundamentais de quem está desenvolvendo é como ela vai lidar com os tipos dos dados. Isso significa que na construção de um algoritmo, nós trabalhamos com vários tipos: números inteiros, números de ponto flutuante, um caractere, um conjunto de caracteres, entre outros. Algumas linguagens precisam que você defina na hora da delcaração que tipo de dado você irá armazenas em determinada variável, outras, permite que o tipo de dados possa ser alterado durante a execução do programa.
+
+O *JavaScript* é uma linguagem fracamente tipada ou de tipagem dinâmica. Isso significa que não precisamos definir que tipo de dado cada variável irá armazenas no momento de sua declaração. Esta característica, por um lado permite ao programador uma maior liberdade na hora de programar, contudo, pode ser difícil detectar determinados erros por conta desta mesma característica da linguagem.
+
+No exemplo abaixo, vamos ver como funciona a questão da tipagem fraca em *JavaScript*.
+
+Vamos criar o arquivo tipagemFraca.js e salva-la na pasta fundamentos:
+
+```javascript
+let qualquer = 'legal'
+console.log(qualquer)
+console.log(typeof qualquer)
+
+qualquer = 3.1516
+console.log(qualquer)
+console.log(typeof qualquer)
+
+// Evitar nome genérico e siglas
+let valor = ''
+let numero = 1
+let pqp = false // Produto Químico Perigoso... kkk
+```
+
+Podemos observar com o exemplo que, embora a tipagem do JavaScript seja fraco, isso não significa que ela não possua tipo. Ao utilizarmos o comando *typeof*, temos como retorno o tipo de dado que a variável está armazenando.
+
+Salientamos novamente o cuidado de colocar bons nomes para variáveis, evitando nomes genéricos e siglas.
