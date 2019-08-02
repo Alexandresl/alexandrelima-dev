@@ -277,4 +277,6 @@ Vimos, também, como realizar alguns cálculos simples utilizando estas constant
 
 Por fim, vimos a diferença entre o tipo de dado number, que pode ser tanto um inteiro quanto um número de ponto flutuante e a função *Number*.
 
+Precisamos ter alguns cuidados em relação aos valores numéricos.
 
+Vamos criar o arquivo numerosAlgunsCuidados.js e salva-la na pasta fundamentos:
