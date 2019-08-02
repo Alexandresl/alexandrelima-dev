@@ -91,6 +91,8 @@ Os comentários em JavaScript são os mesmos da linguagem *C* e *Java* (apesar d
 
 Segue abaixo a sintaxe dos comentários em *JavaScript*:
 
+Vamos criar o arquivo comentario.js e salva-la na pasta fundamentos:
+
 ```javascript
 // Comentários de uma linha
 console.log("linha 1")
@@ -118,4 +120,39 @@ Neste serie de posts, contudo, abriremos uma exceção, e para fim didático, ut
 
 #### O básico de var, Let e Const
 
+Neste capítulo iremos falar sobre variáveis e constantes. O mundo da programação pode ser dividido, de forma bem simplista assim: você tem dados que são processados e geram mais dados. Então, temos os algoritmos que são utilizados para realizar o processamento que na maioria das vezes utilizam dados armazenados em variáveis e constantes e os dados que são organizados em estruturas de dados. Cabe à estrutura de dados definir as regras que os dados vão seguir.
 
+Aqui vamos aprender como criar variáveis e constantes em javascript. Nesta aula não iremos nos aprofundar nas diferenças entre *var*, *let* e *const*.
+
+Historicamente, no *JavaScript*, sempre se utilizou a palavra *var* para criar variáveis. Recentemente, com ECMAScript 2015, foram introduzidas as palavras *let* e *const*, que iremos detalhar futuramente.
+
+```javascript
+/**
+ * var - palavra reservada que usamos
+ * para a declaração da variável
+ * let - outra palavra reservada para
+ * declaração de variável
+ * a, b - é o nome (identificador)
+ * destas variáveis
+ * = - é um comando de atribuição
+ * assim o 3 está sendo atribuído
+ * a variável a.
+ */
+var a = 3
+let b = 4
+
+var a = 30
+b = 40
+
+console.log(a, b)
+
+a = 300
+b = 400
+
+console.log(a, b)
+
+const c = 5
+// c = 50 - Isso gera erro!
+
+console.log(c)
+```
