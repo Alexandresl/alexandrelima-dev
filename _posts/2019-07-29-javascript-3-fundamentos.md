@@ -88,6 +88,7 @@ Podemos também utilizando o comando _node nomedoarquivo.js_ executar no própri
 #### Comentários de código
 
 Os comentários em JavaScript são os mesmos da linguagem *C* e *Java* (apesar de java possuir um a mais). Os comentários são importantes para explicar partes do código ou por que o código executa determinada função. 
+
 Segue abaixo a sintaxe dos comentários em *JavaScript*:
 
 ```javascript
@@ -109,3 +110,8 @@ console.log("linha 2")
 console.log("linha 3")
 ```
 
+Todos os comentários acima são ignorados na hora da execução do programa.
+
+É importante salientar, que os comentários deverão ser adotados de forma consciente. Evitando comentar coisas óbvias do código. Nestes casos, é fundamental que o código seja suficientemente legível no que refere-se a nome de variáveis, nome de funções a termos que criar um comentários para explicar.
+
+Neste serie de posts, contudo, abriremos uma exceção, e para fim didático, utilizaremos bastante comentários. mesmos os óbvios 😉.
