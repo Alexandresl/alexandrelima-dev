@@ -22,6 +22,10 @@ p {
     font-weight: lighter;
 }
 
+section h4 {
+    margin-left: 10px;
+}
+
 .logo-part {
     margin: 0 1px solid #707070;;
 }
@@ -143,6 +147,8 @@ p {
         color: #fff;
         font-size: 1.2em;
     }
+
+
 
     section.post h1, section.page h1 {
         font-size: 1.4em;
