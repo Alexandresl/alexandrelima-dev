@@ -4,7 +4,7 @@ let board; // situação da view
 let whoPlays = 0; // 0 = jogador 1 = cpu
 let checkTheVictory; // verifica condição de vitória
 let inProgress; // verifica se o jogo está em andamento
-let level = 2; // Guarda o nível de dificuldade
+let level = 1; // Guarda o nível de dificuldade
 let totalMove; // Contador do números de jogadas da CPU
 let whoStarts = Math.floor(Math.random() * 2); // 0 = jogador 1 = cpu
 let fullLine; // mostra vistoria
