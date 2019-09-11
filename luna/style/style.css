@@ -4,22 +4,10 @@
 }
 
 .container {
+  position: relative;
   display: grid;
   grid-template: 'header''buttons''play''footer';
   grid-template-rows: 10vh 15vh 65vh 10vh;
-}
-
-@media (max-width: 575.98px) {
-  .container {
-    display: grid;
-    grid-template: 'header''play''buttons''footer';
-    grid-template-rows: 10vh 65vh 15vh 10vh;
-  }
-
-  .buttonFunctions {
-    justify-self: center;
-
-  }
 }
 
 body {
@@ -46,14 +34,13 @@ header {
 
 .Badge {
   font-family: wildma, Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 60px;
+  font-size: 4em;
   color: #fff;
   text-shadow: 0 0 5px #2B2768, 0 0 6px #FF6400;
 }
 
 .buttonFunctions {
   display: grid;
-  grid-template-columns: 2fr 1fr;
   margin: 10px 50px;
   grid-area: buttons;
 }
@@ -62,19 +49,27 @@ header {
   justify-self: right;
 }
 
-#whoStarts {
-  text-shadow: 0 0 5px #000, 2px 2px #FF6400;
+#whoStarts,
+#whoPlay,
+#whoWin {
+  position: absolute;
+  top: 90px;
+  left: 100;
+  padding: 5px 20px;
+  background: #fff;
   text-align: center;
   align-self: center;
-  justify-self: flex-end;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 40px;
-  color: #fff;
+  font-size: 30px;
+  color: #FF6400;
+  border: 1px solid #C2A3FF;
+  display: none;
 }
 
 .audioEl,
 .machineEl,
-.levelEl {
+.levelEl,
+.playEl {
   width: 80px;
   height: 80px;
   background: none;
@@ -98,24 +93,40 @@ header {
   transition: background-image .6s;
 }
 
+.levelEl:hover {
+  background-image: url('../assets/icons/l1Hover.png');
+  transition: background-image .6s;
+}
+
+.playEl {
+  background-image: url('../assets/icons/play.png');
+  transition: background-image .6s;
+}
+
+.playEl:hover {
+  background-image: url('../assets/icons/play_hover.png');
+  transition: background-image .6s;
+}
+
+.playEl.disabled {
+  background-image: url('../assets/icons/play_disabled.png');
+  transition: background-image .6s;
+}
+
 .audioEl:hover {
   background-image: url('../assets/icons/audioOff.png');
 }
 
 .machineEl:hover {
-  background-image: url('../assets/icons/robotO\)ff.png');
-}
-
-.levelEl {
-  background-image: url('../assets/icons/l1.png');
+  background-image: url('../assets/icons/robotOff.png');
 }
 
 /****[ Content ]****/
 
 .content {
   background-color: #FF6400;
-  width: 35%;
-  padding: 50px 50px;
+  width: 32%;
+  padding: 56px;
   justify-self: center;
   align-self: center;
   border-radius: 50%;
@@ -125,11 +136,53 @@ header {
   box-shadow: 1px 1px 10px #FF6400;
 }
 
-table {
-  width: 25vw;
-  height: 25vw;
+#board {
+  width: 20vw;
+  height: 20vw;
   align-self: center;
   justify-self: center;
+  display: block;
+  display: none;
+}
+
+#selectCharacter {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.9em;
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+  width: 20vw;
+  height: 20vw;
+  align-self: center;
+  justify-self: center;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+#selectCharacter>h2 {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.character {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.character>img {
+  border-radius: 10%;
+  width: 120px;
+  height: 120px;
+  margin: 0 2px;
+
+}
+
+.character>img:hover {
+  background: rgba(255, 255, 255, 0.178);
+  border: 1px solid #fff;
+  box-sizing: border-box;
 }
 
 td {
@@ -175,3 +228,106 @@ footer {
   color: #fff;
   text-shadow: 0 0 5px #FF6400;
 }
+
+
+
+@media (max-width: 575.98px) {
+  .container {
+    display: grid;
+    grid-template: 'header''play''buttons''footer';
+    grid-template-rows: 10vh 65vh 15vh 10vh;
+  }
+
+  .buttonFunctions {
+    justify-self: center;
+
+  }
+
+  .Badge {
+    font-size: 3em;
+  }
+
+  .content {
+    width: 60%;
+  }
+
+  #board {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  #selectCharacter {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  .buttonFunctions {
+    display: grid;
+    margin: 10px 50px;
+    grid-area: buttons;
+  }
+
+  #buttonGroup {
+    justify-self: right;
+  }
+
+  #whoStarts,
+  #whoPlay,
+  #whoWin {
+    position: absolute;
+    top: 70px;
+    font-size: 18px;
+    display: none;
+  }
+
+  .audioEl,
+  .machineEl,
+  .levelEl,
+  .playEl {
+    width: 40px;
+    height: 40px;
+  }
+
+
+  .audioEl,
+  .machineEl,
+  .levelEl,
+  .playEl {
+    background-size: 40px;
+  }
+
+  
+
+  .levelEl:hover {
+    background-image: url('../assets/icons/l1Hover.png');
+    transition: background-image .6s;
+  }
+
+  .playEl:hover {
+    background-image: url('../assets/icons/play_hover.png');
+    transition: background-image .6s;
+  }
+
+  .playEl.disabled {
+    background-image: url('../assets/icons/play_disabled.png');
+    transition: background-image .6s;
+  }
+
+  .audioEl:hover {
+    background-image: url('../assets/icons/audioOff.png');
+  }
+
+  .machineEl:hover {
+    background-image: url('../assets/icons/robotOff.png');
+  }
+
+}
+
+
+@media (max-width: 767.98px) {}
+
+
+@media (max-width: 991.98px) {}
+
+
+@media (max-width: 1199.98px) {}
