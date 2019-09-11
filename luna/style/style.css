@@ -235,7 +235,7 @@ footer {
   .container {
     display: grid;
     grid-template: 'header''play''buttons''footer';
-    grid-template-rows: 10vh 65vh 15vh 10vh;
+    grid-template-rows: 10vh 60vh 20vh 10vh;
   }
 
   .buttonFunctions {
@@ -261,11 +261,7 @@ footer {
     height: 40vw;
   }
 
-  .buttonFunctions {
-    display: grid;
-    margin: 10px 50px;
-    grid-area: buttons;
-  }
+
 
   #buttonGroup {
     justify-self: right;
@@ -275,7 +271,7 @@ footer {
   #whoPlay,
   #whoWin {
     position: absolute;
-    top: 70px;
+    top: 60px;
     font-size: 18px;
     display: none;
   }
@@ -286,6 +282,7 @@ footer {
   .playEl {
     width: 40px;
     height: 40px;
+    margin: 0 5px;
   }
 
 
@@ -296,38 +293,89 @@ footer {
     background-size: 40px;
   }
 
-  
+}
 
-  .levelEl:hover {
-    background-image: url('../assets/icons/l1Hover.png');
-    transition: background-image .6s;
+
+@media (max-width: 767.98px) {
+  .container {
+    display: grid;
+    grid-template: 'header''play''buttons''footer';
+    grid-template-rows: 10vh 60vh 20vh 10vh;
   }
 
-  .playEl:hover {
-    background-image: url('../assets/icons/play_hover.png');
-    transition: background-image .6s;
+  .buttonFunctions {
+    justify-self: center;
+
   }
 
-  .playEl.disabled {
-    background-image: url('../assets/icons/play_disabled.png');
-    transition: background-image .6s;
+  .Badge {
+    font-size: 3em;
   }
 
-  .audioEl:hover {
-    background-image: url('../assets/icons/audioOff.png');
+  .content {
+    width: 60%;
   }
 
-  .machineEl:hover {
-    background-image: url('../assets/icons/robotOff.png');
+  #board {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  #selectCharacter {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  #buttonGroup {
+    justify-self: right;
+  }
+
+  #whoStarts,
+  #whoPlay,
+  #whoWin {
+    position: absolute;
+    top: 80px;
+    font-size: 18px;
+    display: none;
+  }
+
+  .audioEl,
+  .machineEl,
+  .levelEl,
+  .playEl {
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+  }
+
+
+  .audioEl,
+  .machineEl,
+  .levelEl,
+  .playEl {
+    background-size: 50px;
   }
 
 }
 
 
-@media (max-width: 767.98px) {}
+@media (max-width: 991.98px) {
 
+  .content {
+    width: 50%;
+  }
 
-@media (max-width: 991.98px) {}
+  #board {
+    width: 35vw;
+    height: 35vw;
+  }
+
+  #selectCharacter {
+    width: 35vw;
+    height: 35vw;
+  }
+
+}
 
 
 @media (max-width: 1199.98px) {}
