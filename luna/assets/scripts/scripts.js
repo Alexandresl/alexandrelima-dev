@@ -11,6 +11,7 @@ let totalMove; // Contador do números de jogadas da CPU
 let whoStarts = 0; // 0 = jogador 1 = cpu
 let fullLine; // mostra vistoria
 let playEffect = audio = new Audio('./assets/audio/click.wav'); // Audio da jogada
+let playEffectHome = audio = new Audio('./assets/audio/click1.wav'); // Audio da jogada
 let playMusic = audio = new Audio('./assets/audio/lunaMusic.mp3'); // Música de fundo
 let effectOnOff = true; // Silencia efeito
 
@@ -29,7 +30,10 @@ let cel6El = document.getElementById('cel6');
 let cel7El = document.getElementById('cel7');
 let cel8El = document.getElementById('cel8');
 let cel9El = document.getElementById('cel9');
-
+let btnAudioEl = document.querySelector('.audioEl');
+let btnMachineEl = document.querySelector('.machineEl');
+let btnLevelEl = document.querySelector('.levelEl');
+let btnPlayEl = document.querySelector('.playEl');
 
 function play(position) {
   if (inProgress && whoPlays === 0) {
@@ -103,7 +107,30 @@ function play(position) {
 function playEffectFunction() {
   if (effectOnOff) {
     playEffect.currentTime = 0;
-    playEffect.play();
+    let playPromise = playEffect.play();
+    if (playPromise !== undefined) {
+      playPromise.then(() => {
+      })
+        .catch(error => {
+          console.log('Erro: ', error);
+          
+        });
+    }
+  }
+}
+
+function playEffectHomeFunc() {
+  if (effectOnOff) {
+    playEffectHome.currentTime = 0;
+    let playPromise = playEffectHome.play();
+    if (playPromise !== undefined) {
+      playPromise.then(() => {
+      })
+        .catch(error => {
+          console.log('Erro: ', error);
+
+        });
+    }
   }
 }
 
@@ -247,7 +274,7 @@ function cpuMoves() {
 
 }
 
-function updateWhoPlays() {  
+function updateWhoPlays() {
   if (totalMove !== 0) {
     whoStartsEl.style.display = 'none';
     whoWinEl.style.display = 'none';
@@ -292,8 +319,7 @@ function verifyVictory() {
         board[i][1].children[0].style.backgroundColor = 'white';
         board[i][2].children[0].style.backgroundColor = 'white';
       }
-      console.log('entrou');
-      
+
       return game[i][0];
     }
   }
@@ -349,7 +375,14 @@ function updateBoard() {
 
 }
 
+function activePlay() {
+  btnPlayEl.removeAttribute('disabled');
+  btnPlayEl.classList.remove('disabled');
+}
+
 function start(jogador) {
+  playBackAudio();
+  activePlay();
   selectCharacterEl.style.display = 'none';
   boardEl.style.display = 'block';
   boardEl.classList.add('animated', 'fadeIn', 'slower');
@@ -389,7 +422,6 @@ function start(jogador) {
     cpuMoves();
   }
   clearStyle();
-
 }
 
 function clearStyle() {
@@ -401,13 +433,18 @@ function clearStyle() {
 
 }
 
-function load() {  
-    setTimeout(() => {
-      console.log('executou');
-      playMusic.currentTime = 0;
-      playMusic.loop = true;
-      playMusic.play();
-    }, 10000);     
+function playBackAudio() {
+  playMusic.currentTime = 0;
+  playMusic.loop = true;
+  playMusic.autoplay = true;
+  playMusic.preload = 'none';
+  var playPromise = playMusic.play();
+  if (playPromise !== undefined) {
+    playPromise.then(() => {
+      console.log('Executou audio');
+    })
+      .catch(error => {
+        console.log('não executou!');
+      });
+  }
 }
-
-window.addEventListener('load', load);

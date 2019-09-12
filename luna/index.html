@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
@@ -20,18 +20,18 @@
     <div id="whoWin"></div>
     <div class="buttonFunctions">
       <div id="buttonGroup">
-        <button class="audioEl"></button>
-        <button class="machineEl"></button>
-        <button class="levelEl" onclick="start()" ></button>
-        <button class="playEl" onclick="start()" ></button>
+        <button class="audioEl" onmouseover="playEffectHomeFunc()"></button>
+        <button class="machineEl" onmouseover="playEffectHomeFunc()"></button>
+        <button class="levelEl" onclick="start()" onmouseover="playEffectHomeFunc()"></button>
+        <button class="playEl disabled" onclick="start()" disabled ></button>
       </div>
     </div>
     <div class="content">
       <div id="selectCharacter">
         <h2>Selecione seu personagem:</h2>
         <div class="character">
-          <img src="assets/images/jogador1luna.png" id="luna" onclick="start(this.id)">
-          <img src="assets/images/jogador2luna.png" id="claudio" onclick="start(this.id)">
+          <img src="assets/images/jogador1luna.png" id="luna" onclick="start(this.id)" onmouseover="playEffectHomeFunc()">
+          <img src="assets/images/jogador2luna.png" id="claudio" onclick="start(this.id)" onmouseover="playEffectHomeFunc()">
         </div>
       </div>
       <table id="board">
