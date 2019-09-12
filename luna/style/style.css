@@ -66,9 +66,12 @@ header {
   display: none;
 }
 
-.audioEl,
+.audioElOn,
+.audioElOff,
 .machineEl,
-.levelEl,
+.levelEl1,
+.levelEl2,
+.levelEl3,
 .playEl {
   width: 80px;
   height: 80px;
@@ -79,8 +82,13 @@ header {
 }
 
 
-.audioEl {
+.audioElOn {
   background-image: url('../assets/icons/audioOn.png');
+  transition: background-image .6s;
+}
+
+.audioElOff {
+  background-image: url('../assets/icons/audioOff.png');
   transition: background-image .6s;
 }
 
@@ -89,13 +97,33 @@ header {
   transition: background-image .6s;
 }
 
-.levelEl {
+.levelEl1 {
   background-image: url('../assets/icons/l1.png');
   transition: background-image .6s;
 }
 
-.levelEl:hover {
+.levelEl1:hover {
   background-image: url('../assets/icons/l1Hover.png');
+  transition: background-image .6s;
+}
+
+.levelEl2 {
+  background-image: url('../assets/icons/l2.png');
+  transition: background-image .6s;
+}
+
+.levelEl2:hover {
+  background-image: url('../assets/icons/l2Hover.png');
+  transition: background-image .6s;
+}
+
+.levelEl3 {
+  background-image: url('../assets/icons/l3.png');
+  transition: background-image .6s;
+}
+
+.levelEl3:hover {
+  background-image: url('../assets/icons/l3Hover.png');
   transition: background-image .6s;
 }
 
@@ -115,7 +143,8 @@ header {
   cursor: auto;
 }
 
-.audioEl:hover {
+.audioElOn:hover,
+.audioElOff:hover {
   background-image: url('../assets/icons/audioOff.png');
 }
 
@@ -278,9 +307,12 @@ footer {
     display: none;
   }
 
-  .audioEl,
+  .audioElOn,
+  .audioElOff,
   .machineEl,
-  .levelEl,
+  .levelEl1,
+  .levelEl2,
+  .levelEl3,
   .playEl {
     width: 40px;
     height: 40px;
@@ -288,9 +320,12 @@ footer {
   }
 
 
-  .audioEl,
+  .audioElOn,
+  .audioElOff,
   .machineEl,
-  .levelEl,
+  .levelEl1,
+  .levelel2,
+  .levelel3,
   .playEl {
     background-size: 40px;
   }
@@ -341,9 +376,12 @@ footer {
     display: none;
   }
 
-  .audioEl,
+  .audioElOn,
+  .audioElOff,
   .machineEl,
-  .levelEl,
+  .levelEl1,
+  .levelEl2,
+  .levelEl3,
   .playEl {
     width: 50px;
     height: 50px;
@@ -351,12 +389,17 @@ footer {
   }
 
 
-  .audioEl,
+  .audioElOn,
+  .audioElOff,
   .machineEl,
-  .levelEl,
+  .levelEl1,
+  .levelEl2,
+  .levelEl3,
   .playEl {
     background-size: 50px;
   }
+
+
 
 }
 

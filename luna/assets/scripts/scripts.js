@@ -6,14 +6,14 @@ let computerCharacter;
 let whoPlays = 0; // 0 = jogador 1 = cpu
 let checkTheVictory; // verifica condição de vitória
 let inProgress; // verifica se o jogo está em andamento
-let level = 2; // Guarda o nível de dificuldade
+let gameLevel = 1; // Guarda o nível de dificuldade
 let totalMove; // Contador do números de jogadas da CPU
 let whoStarts = 0; // 0 = jogador 1 = cpu
 let fullLine; // mostra vistoria
 let playEffect = audio = new Audio('./assets/audio/click.wav'); // Audio da jogada
 let playEffectHome = audio = new Audio('./assets/audio/click1.wav'); // Audio da jogada
 let playMusic = audio = new Audio('./assets/audio/lunaMusic.mp3'); // Música de fundo
-let effectOnOff = true; // Silencia efeito
+let audioOnOff = true; // Silencia efeito
 
 // Elementos
 let whoStartsEl = document.getElementById('whoStarts');
@@ -30,10 +30,26 @@ let cel6El = document.getElementById('cel6');
 let cel7El = document.getElementById('cel7');
 let cel8El = document.getElementById('cel8');
 let cel9El = document.getElementById('cel9');
-let btnAudioEl = document.querySelector('.audioEl');
+let btnAudioEl = document.querySelector('.audioElOn')
 let btnMachineEl = document.querySelector('.machineEl');
-let btnLevelEl = document.querySelector('.levelEl');
+let btnLevelEl = document.querySelector('.levelEl1');
 let btnPlayEl = document.querySelector('.playEl');
+
+function toggleAudio() {
+  audioOnOff = !audioOnOff;
+  if (!audioOnOff) {
+    btnAudioEl.classList.remove('audioElOn');
+    btnAudioEl.classList.add('audioElOff');
+    playMusic.pause();
+  } else {
+    btnAudioEl.classList.remove('audioElOff');
+    btnAudioEl.classList.add('audioElOn');
+    if (playMusic.paused === true) {
+      playMusic.play();
+    }
+    
+  }
+}
 
 function play(position) {
   if (inProgress && whoPlays === 0) {
@@ -105,31 +121,47 @@ function play(position) {
 }
 
 function playEffectFunction() {
-  if (effectOnOff) {
+  if (audioOnOff) {
     playEffect.currentTime = 0;
     let playPromise = playEffect.play();
     if (playPromise !== undefined) {
       playPromise.then(() => {
       })
         .catch(error => {
-          console.log('Erro: ', error);
           
         });
     }
   }
 }
 
+function level() {
+  switch (gameLevel) {
+    case 1:
+      gameLevel = 2;
+      btnLevelEl.classList.remove('levelEl1');
+      btnLevelEl.classList.add('levelEl2');
+      break;
+    case 2:
+      gameLevel = 3;
+      btnLevelEl.classList.remove('levelEl2');
+      btnLevelEl.classList.add('levelEl3');
+      break;
+    case 3:
+      gameLevel = 1;
+      btnLevelEl.classList.remove('levelEl3');
+      btnLevelEl.classList.add('levelEl1');
+      break;
+  }
+}
+
 function playEffectHomeFunc() {
-  if (effectOnOff) {
+  if (audioOnOff) {
     playEffectHome.currentTime = 0;
     let playPromise = playEffectHome.play();
     if (playPromise !== undefined) {
       playPromise.then(() => {
-      })
-        .catch(error => {
-          console.log('Erro: ', error);
-
-        });
+      }) .catch(error => {
+      });
     }
   }
 }
@@ -139,13 +171,13 @@ function cpuMoves() {
   if (inProgress === true) {
     setTimeout(() => {
       var i, j;
-      if (level === 1) {
+      if (gameLevel === 1) {
         do {
           i = Math.round(Math.random() * 2);
           j = Math.round(Math.round(Math.random() * 2))
         } while (game[i][j]);
         game[i][j] = computerCharacter;
-      } else if (level === 2) {
+      } else if (gameLevel === 2) {
         // Ataque
         // Linha 1
         if (game[0][0] === 'o' && game[0][1] === 'o' && game[0][2] === '') {
@@ -261,6 +293,8 @@ function cpuMoves() {
             }
           }
         }
+      } else {
+        // Não implementado
       }
 
       checkTheVictory = verifyVictory();
@@ -434,17 +468,17 @@ function clearStyle() {
 }
 
 function playBackAudio() {
-  playMusic.currentTime = 0;
-  playMusic.loop = true;
-  playMusic.autoplay = true;
-  playMusic.preload = 'none';
-  var playPromise = playMusic.play();
-  if (playPromise !== undefined) {
-    playPromise.then(() => {
-      console.log('Executou audio');
-    })
-      .catch(error => {
-        console.log('não executou!');
-      });
+  if (audioOnOff) {
+    playMusic.currentTime = 0;
+    playMusic.loop = true;
+    playMusic.autoplay = true;
+    playMusic.preload = 'none';
+    var playPromise = playMusic.play();
+    if (playPromise !== undefined) {
+      playPromise.then(() => {
+      })
+        .catch(error => {
+        });
+    }
   }
 }
