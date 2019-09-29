@@ -64,21 +64,21 @@ function toggleAudio() {
   }
 }
 
-let loader = () => {
-    setTimeout(() => {
-      loaderEl.style.opacity = 1;
-      animateCSS(loaderEl, 'flipInX', () => {
-        setTimeout(() => {
-          animateCSS(introEl, 'bounceOut');
-        }, 8000);
-      });
-      setTimeout(() => {
-        introEl.style.display = 'none';
-        containerEl.style.display = 'block';
-        animateCSS(container, 'fadeIn');
-      }, 10000);
-    }, 2000);
-}
+// let loader = () => {
+//     setTimeout(() => {
+//       loaderEl.style.opacity = 1;
+//       animateCSS(loaderEl, 'flipInX', () => {
+//         setTimeout(() => {
+//           animateCSS(introEl, 'bounceOut');
+//         }, 8000);
+//       });
+//       setTimeout(() => {
+//         introEl.style.display = 'none';
+//         containerEl.style.display = 'block';
+//         animateCSS(container, 'fadeIn');
+//       }, 10000);
+//     }, 2000);
+// }
 
 // function playEffectHomeFunc() {
 //   if (audioOnOff) {
@@ -94,25 +94,25 @@ let loader = () => {
 //   }
 // }
 
-function level() {
-  switch (gameLevel) {
-    case 1:
-      gameLevel = 2;
-      btnLevelEl.classList.remove('levelEl1');
-      btnLevelEl.classList.add('levelEl2');
-      break;
-    case 2:
-      gameLevel = 3;
-      btnLevelEl.classList.remove('levelEl2');
-      btnLevelEl.classList.add('levelEl3');
-      break;
-    case 3:
-      gameLevel = 1;
-      btnLevelEl.classList.remove('levelEl3');
-      btnLevelEl.classList.add('levelEl1');
-      break;
-  }
-}
+// function level() {
+//   switch (gameLevel) {
+//     case 1:
+//       gameLevel = 2;
+//       btnLevelEl.classList.remove('levelEl1');
+//       btnLevelEl.classList.add('levelEl2');
+//       break;
+//     case 2:
+//       gameLevel = 3;
+//       btnLevelEl.classList.remove('levelEl2');
+//       btnLevelEl.classList.add('levelEl3');
+//       break;
+//     case 3:
+//       gameLevel = 1;
+//       btnLevelEl.classList.remove('levelEl3');
+//       btnLevelEl.classList.add('levelEl1');
+//       break;
+//   }
+// }
 
 // function play(position) {
 //   if (inProgress && whoPlays === 0) {
@@ -466,15 +466,15 @@ function level() {
 //   return '';
 // }
 
-function activeButtonPlay() {
-  btnPlayEl.removeAttribute('disabled');
-  btnPlayEl.classList.remove('disabled');
-  LabelPlayEl.classList.remove('disabled');
-}
+// function activeButtonPlay() {
+//   btnPlayEl.removeAttribute('disabled');
+//   btnPlayEl.classList.remove('disabled');
+//   LabelPlayEl.classList.remove('disabled');
+// }
 
-function restart() {
-  start(myCharacter);
-}
+// function restart() {
+//   start(myCharacter);
+// }
 
 // function start(player) {
 //   console.log('entrou', player);
@@ -526,13 +526,13 @@ function restart() {
 //   activeButtonPlay();
 // }
 
-function clearStyle() {
-  for (let i = 0; i < 3; i++) {
-    for (let j = 0; j < 3; j++) {
-      board[i][j].children[0].style.background = 'none';
-    }
-  }
-}
+// function clearStyle() {
+//   for (let i = 0; i < 3; i++) {
+//     for (let j = 0; j < 3; j++) {
+//       board[i][j].children[0].style.background = 'none';
+//     }
+//   }
+// }
 
 // function changeLevel(value) {
 //   gameLevel = value;

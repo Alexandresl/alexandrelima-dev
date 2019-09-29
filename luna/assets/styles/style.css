@@ -26,6 +26,7 @@ body {
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
+  overflow: hidden;
 }
 
 /*----[ Intro ]----*/
@@ -35,7 +36,7 @@ body {
   padding: 2vh 0;
   display: grid;
   justify-content: center;
-  display: none;
+  /* display: none; */
 }
 
 .intro-logo>img {
@@ -72,7 +73,7 @@ body {
 /*----[ Container ]----*/
 
 #container {
-  /* display: none; */
+  display: none;
   width: 100vw;
 }
 

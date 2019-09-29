@@ -4,7 +4,8 @@ let board; // situação da view
 let audioOnOff = true; // true = audio on | false = audio off
 let gameLevel = 1; // Guarda o nível de dificuldade
 let myCharacter; // meu Jogador
-let computerCharacter; // computador
+let computerCharacter; // computador || outro player
+let machineOnOff = true; // Jogo contra a máquina -> on - true | off = false
 let inProgress; // verifica se o jogo está em andamento
 let totalMove; // Contador do números de jogadas
 let whoStarts; // 0 = jogador 1 = cpu
@@ -15,6 +16,9 @@ let playMusic = audio = new Audio('./assets/audio/lunaMusic.mp3'); // Música de
 let playEffect = audio = new Audio('./assets/audio/click.wav'); // Audio da jogada
 
 // Elementos
+let introEl = document.querySelector('#intro');
+let containerEl = document.querySelector('#container');
+let loaderEl = document.querySelector('.intro-loader');
 let selectCharacterEl = document.querySelector('#selectCharacter');
 let tableEl = document.querySelector('#tableEl');
 let cel1El = document.getElementById('cel1');
@@ -44,6 +48,53 @@ function animateCSS(element, animationName, callback) {
     if (typeof callback === 'function') callback()
   }
   element.addEventListener('animationend', handleAnimationEnd)
+}
+
+let loader = () => {
+  setTimeout(() => {
+    loaderEl.style.opacity = 1;
+    animateCSS(loaderEl, 'flipInX', () => {
+      setTimeout(() => {
+        animateCSS(introEl, 'flipOutX');
+      }, 6000);
+    });
+    setTimeout(() => {
+      introEl.style.display = 'none';
+      containerEl.style.display = 'block';
+      animateCSS(container, 'fadeIn');
+    }, 8000);
+  }, 2000);
+}
+
+let toggleAudio = () => {
+  audioOnOff = !audioOnOff;
+  let icon;
+  let el = document.getElementById('audioOnOff');
+  if (!audioOnOff) {
+    icon = 'volume_off';
+    el.innerHTML = icon;
+    playMusic.pause();
+  } else {
+    icon = 'volume_up';
+    el.innerHTML = icon;
+    playMusic.play();
+  }
+}
+
+let togglePlayer = () => {
+  machineOnOff = !machineOnOff;
+  let icon;
+  let el = document.getElementById('computerOnOff');
+  let label = document.getElementById('labelCPU');
+  if (!machineOnOff) {
+    icon = 'sports_kabaddi';
+    el.innerHTML = icon;
+    label.innerHTML = 'Jogador'
+  } else {
+    icon = 'computer';
+    el.innerHTML = icon;
+    label.innerHTML = 'CPU'
+  }
 }
 
 let play = (position) => {
@@ -106,7 +157,9 @@ let play = (position) => {
     }
     if (whoPlays === 1) {
       checkTheVictory = verifyVictory();
+      console.log('checkTheVictory', checkTheVictory);      
       totalMove++;
+      console.log('totalMove', totalMove);
       updateBoard();
       endGame();
       cpuMoves();
@@ -192,7 +245,7 @@ let firstPlayer = () => {
 }
 
 let cpuMoves = () => {
-  if (inProgress === true) {
+  if (inProgress === true && machineOnOff) {
     setTimeout(() => {
       let i, j;
       if (gameLevel == 1) {
@@ -327,11 +380,81 @@ let cpuMoves = () => {
       }
       checkTheVictory = verifyVictory();
       totalMove++;
+      console.log('totalMove', totalMove);
       updateBoard();
       endGame();
       whoPlays = 0;
       updateWhoPlays();
     }, Math.random() * 2000);
+  } else {
+    if (inProgress && whoPlays === 0) {
+      switch (position) {
+        case 'cel1':
+          if (game[0][0] === "") {
+            game[0][0] = computerCharacter;
+            whoPlays = 0;
+          }
+          break;
+        case 'cel2':
+          if (game[0][1] === "") {
+            game[0][1] = computerCharacter;
+            whoPlays = 0;
+          }
+          break;
+        case 'cel3':
+          if (game[0][2] === "") {
+            game[0][2] = computerCharacter;
+            whoPlays = 0;
+          }
+          break;
+        case 'cel4':
+          if (game[1][0] === "") {
+            game[1][0] = computerCharacter;
+            whoPlays = 0;
+          }
+          break;
+        case 'cel5':
+          if (game[1][1] === "") {
+            game[1][1] = computerCharacter;
+            whoPlays = 0;
+          }
+          break;
+        case 'cel6':
+          if (game[1][2] === "") {
+            game[1][2] = computerCharacter;
+            whoPlays = 0;
+          }
+          break;
+        case 'cel7':
+          if (game[2][0] === "") {
+            game[2][0] = computerCharacter;
+            whoPlays = 0;
+          }
+          break;
+        case 'cel8':
+          if (game[2][1] === "") {
+            game[2][1] = computerCharacter;
+            whoPlays = 0;
+          }
+          break;
+        case 'cel9':
+          if (game[2][2] === "") {
+            game[2][2] = computerCharacter;
+            whoPlays = 0;
+          }
+          break;
+      }
+      if (whoPlays === 1) {
+        checkTheVictory = verifyVictory();
+        console.log('checkTheVictory', checkTheVictory);
+        totalMove++;
+        console.log('totalMove', totalMove);
+        updateBoard();
+        endGame();
+        cpuMoves();
+        updateWhoPlays();
+      }
+    }
   }
 }
 
@@ -365,16 +488,17 @@ let endGame = () => {
     inProgress = false;
   }
   /**
-   * Caso tenha empatada
+   * Caso tenha empatado
    */
-  if (checkTheVictory === '' && totalMove === 10 && whoStarts === 0 ||
-  checkTheVictory === '' && totalMove === 9 && whoStarts === 1) {
+  if (checkTheVictory === '' && totalMove === 9) {
+     console.log('entrou endGame');     
     setTimeout(() => {
       whoPlayEl.style.display = 'none';
       whoWinEl.style.display = 'block';
       whoWinEl.innerHTML = 'O Jogo Empatou!!!';
       // tableEl.style.display = 'none';
-    }, 10);
+    }, 1);
+    inProgress = false;
   }
 }
 
@@ -501,3 +625,5 @@ let activeButtonPlay = () => {
   btnPlayEl.classList.remove('disabled');
   LabelPlayEl.classList.remove('disabled');
 }
+
+document.addEventListener('DOMContentLoaded', loader(), false);

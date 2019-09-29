@@ -95,12 +95,14 @@
         <ul>
           <li>Som</li>
           <li class="button">
-            <i class="material-icons">volume_up</i>
+            <i class="material-icons" id="audioOnOff" onclick="toggleAudio()">volume_up</i>
           </li>
         </ul>
         <ul>
-          <li>CPU</li>
-          <li class="button"><i class="material-icons">computer</i></li>
+          <li id="labelCPU">CPU</li>
+          <li class="button">
+            <i id="computerOnOff" onclick="togglePlayer()" class="material-icons">computer</i>
+          </li>
         </ul>
         <ul>
           <li>Nível</li>
